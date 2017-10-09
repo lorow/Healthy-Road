@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="TileSet" subresource_count="2" version="2.1" version_name="Godot Engine v2.1.3.stable.official">
+	<ext_resource path="res://sprites/tileset1.png" type="Texture" index="0"></ext_resource>
+	<main_resource>
+		<string name="0/name"> "Sprite1" </string>
+		<resource name="0/texture" external="0">  </resource>
+		<vector2 name="0/tex_offset"> 0, 0 </vector2>
+		<resource name="0/material"></resource>		<color name="0/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="0/region"> 0, 0, 32, 32 </rect2>
+		<vector2 name="0/occluder_offset"> -0, -0 </vector2>
+		<resource name="0/occluder"></resource>		<vector2 name="0/navigation_offset"> -0, -0 </vector2>
+		<resource name="0/navigation"></resource>		<vector2 name="0/shape_offset"> 0, 0 </vector2>
+		<array name="0/shapes" len="0" shared="false">
+		</array>
+		<string name="1/name"> "Sprite9" </string>
+		<resource name="1/texture" external="0">  </resource>
+		<vector2 name="1/tex_offset"> 0, 0 </vector2>
+		<resource name="1/material"></resource>		<color name="1/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="1/region"> 0, 32, 32, 32 </rect2>
+		<vector2 name="1/occluder_offset"> -0, -0 </vector2>
+		<resource name="1/occluder"></resource>		<vector2 name="1/navigation_offset"> -0, -0 </vector2>
+		<resource name="1/navigation"></resource>		<vector2 name="1/shape_offset"> 0, 0 </vector2>
+		<array name="1/shapes" len="0" shared="false">
+		</array>
+		<string name="2/name"> "Sprite10" </string>
+		<resource name="2/texture" external="0">  </resource>
+		<vector2 name="2/tex_offset"> 0, 0 </vector2>
+		<resource name="2/material"></resource>		<color name="2/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="2/region"> 0, 64, 32, 32 </rect2>
+		<vector2 name="2/occluder_offset"> -0, -0 </vector2>
+		<resource name="2/occluder"></resource>		<vector2 name="2/navigation_offset"> -0, -0 </vector2>
+		<resource name="2/navigation"></resource>		<vector2 name="2/shape_offset"> 0, 0 </vector2>
+		<array name="2/shapes" len="0" shared="false">
+		</array>
+		<string name="3/name"> "Sprite11" </string>
+		<resource name="3/texture" external="0">  </resource>
+		<vector2 name="3/tex_offset"> 0, 0 </vector2>
+		<resource name="3/material"></resource>		<color name="3/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="3/region"> 0, 96, 32, 32 </rect2>
+		<vector2 name="3/occluder_offset"> -0, -0 </vector2>
+		<resource name="3/occluder"></resource>		<vector2 name="3/navigation_offset"> -0, -0 </vector2>
+		<resource name="3/navigation"></resource>		<vector2 name="3/shape_offset"> 0, 0 </vector2>
+		<array name="3/shapes" len="0" shared="false">
+		</array>
+		<string name="4/name"> "Sprite12" </string>
+		<resource name="4/texture" external="0">  </resource>
+		<vector2 name="4/tex_offset"> 0, 0 </vector2>
+		<resource name="4/material"></resource>		<color name="4/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="4/region"> 0, 128, 32, 32 </rect2>
+		<vector2 name="4/occluder_offset"> -0, -0 </vector2>
+		<resource name="4/occluder"></resource>		<vector2 name="4/navigation_offset"> -0, -0 </vector2>
+		<resource name="4/navigation"></resource>		<vector2 name="4/shape_offset"> 0, 0 </vector2>
+		<array name="4/shapes" len="0" shared="false">
+		</array>
+		<string name="5/name"> "Sprite13" </string>
+		<resource name="5/texture" external="0">  </resource>
+		<vector2 name="5/tex_offset"> 0, 0 </vector2>
+		<resource name="5/material"></resource>		<color name="5/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="5/region"> 0, 160, 32, 32 </rect2>
+		<vector2 name="5/occluder_offset"> -0, -0 </vector2>
+		<resource name="5/occluder"></resource>		<vector2 name="5/navigation_offset"> -0, -0 </vector2>
+		<resource name="5/navigation"></resource>		<vector2 name="5/shape_offset"> 0, 0 </vector2>
+		<array name="5/shapes" len="0" shared="false">
+		</array>
+		<string name="6/name"> "Sprite14" </string>
+		<resource name="6/texture" external="0">  </resource>
+		<vector2 name="6/tex_offset"> 0, 0 </vector2>
+		<resource name="6/material"></resource>		<color name="6/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="6/region"> 0, 192, 32, 32 </rect2>
+		<vector2 name="6/occluder_offset"> -0, -0 </vector2>
+		<resource name="6/occluder"></resource>		<vector2 name="6/navigation_offset"> -0, -0 </vector2>
+		<resource name="6/navigation"></resource>		<vector2 name="6/shape_offset"> 0, 0 </vector2>
+		<array name="6/shapes" len="0" shared="false">
+		</array>
+		<string name="7/name"> "Sprite15" </string>
+		<resource name="7/texture" external="0">  </resource>
+		<vector2 name="7/tex_offset"> 0, 0 </vector2>
+		<resource name="7/material"></resource>		<color name="7/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="7/region"> 0, 224, 32, 32 </rect2>
+		<vector2 name="7/occluder_offset"> -0, -0 </vector2>
+		<resource name="7/occluder"></resource>		<vector2 name="7/navigation_offset"> -0, -0 </vector2>
+		<resource name="7/navigation"></resource>		<vector2 name="7/shape_offset"> 0, 0 </vector2>
+		<array name="7/shapes" len="0" shared="false">
+		</array>
+		<string name="8/name"> "Sprite2" </string>
+		<resource name="8/texture" external="0">  </resource>
+		<vector2 name="8/tex_offset"> 0, 0 </vector2>
+		<resource name="8/material"></resource>		<color name="8/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="8/region"> 32, 0, 32, 32 </rect2>
+		<vector2 name="8/occluder_offset"> -0, -0 </vector2>
+		<resource name="8/occluder"></resource>		<vector2 name="8/navigation_offset"> -0, -0 </vector2>
+		<resource name="8/navigation"></resource>		<vector2 name="8/shape_offset"> 0, 0 </vector2>
+		<array name="8/shapes" len="0" shared="false">
+		</array>
+		<string name="9/name"> "Sprite9 4" </string>
+		<resource name="9/texture" external="0">  </resource>
+		<vector2 name="9/tex_offset"> 0, 0 </vector2>
+		<resource name="9/material"></resource>		<color name="9/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="9/region"> 32, 32, 32, 32 </rect2>
+		<vector2 name="9/occluder_offset"> -0, -0 </vector2>
+		<resource name="9/occluder"></resource>		<vector2 name="9/navigation_offset"> -0, -0 </vector2>
+		<resource name="9/navigation"></resource>		<vector2 name="9/shape_offset"> 0, 0 </vector2>
+		<array name="9/shapes" len="0" shared="false">
+		</array>
+		<string name="10/name"> "Sprite95" </string>
+		<resource name="10/texture" external="0">  </resource>
+		<vector2 name="10/tex_offset"> 0, 0 </vector2>
+		<resource name="10/material"></resource>		<color name="10/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="10/region"> 32, 64, 32, 32 </rect2>
+		<vector2 name="10/occluder_offset"> -0, -0 </vector2>
+		<resource name="10/occluder"></resource>		<vector2 name="10/navigation_offset"> -0, -0 </vector2>
+		<resource name="10/navigation"></resource>		<vector2 name="10/shape_offset"> 0, 0 </vector2>
+		<array name="10/shapes" len="0" shared="false">
+		</array>
+		<string name="11/name"> "Sprite100 6" </string>
+		<resource name="11/texture" external="0">  </resource>
+		<vector2 name="11/tex_offset"> 0, 0 </vector2>
+		<resource name="11/material"></resource>		<color name="11/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="11/region"> 32, 96, 32, 32 </rect2>
+		<vector2 name="11/occluder_offset"> -0, -0 </vector2>
+		<resource name="11/occluder"></resource>		<vector2 name="11/navigation_offset"> -0, -0 </vector2>
+		<resource name="11/navigation"></resource>		<vector2 name="11/shape_offset"> 0, 0 </vector2>
+		<array name="11/shapes" len="0" shared="false">
+		</array>
+		<string name="12/name"> "Sprite1007" </string>
+		<resource name="12/texture" external="0">  </resource>
+		<vector2 name="12/tex_offset"> 0, 0 </vector2>
+		<resource name="12/material"></resource>		<color name="12/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="12/region"> 32, 128, 32, 32 </rect2>
+		<vector2 name="12/occluder_offset"> -0, -0 </vector2>
+		<resource name="12/occluder"></resource>		<vector2 name="12/navigation_offset"> -0, -0 </vector2>
+		<resource name="12/navigation"></resource>		<vector2 name="12/shape_offset"> 0, 0 </vector2>
+		<array name="12/shapes" len="0" shared="false">
+		</array>
+		<string name="13/name"> "Sprite1009 5" </string>
+		<resource name="13/texture" external="0">  </resource>
+		<vector2 name="13/tex_offset"> 0, 0 </vector2>
+		<resource name="13/material"></resource>		<color name="13/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="13/region"> 32, 160, 32, 32 </rect2>
+		<vector2 name="13/occluder_offset"> -0, -0 </vector2>
+		<resource name="13/occluder"></resource>		<vector2 name="13/navigation_offset"> -0, -0 </vector2>
+		<resource name="13/navigation"></resource>		<vector2 name="13/shape_offset"> 0, 0 </vector2>
+		<array name="13/shapes" len="0" shared="false">
+		</array>
+		<string name="14/name"> "Sprite10096" </string>
+		<resource name="14/texture" external="0">  </resource>
+		<vector2 name="14/tex_offset"> 0, 0 </vector2>
+		<resource name="14/material"></resource>		<color name="14/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="14/region"> 32, 192, 32, 32 </rect2>
+		<vector2 name="14/occluder_offset"> -0, -0 </vector2>
+		<resource name="14/occluder"></resource>		<vector2 name="14/navigation_offset"> -0, -0 </vector2>
+		<resource name="14/navigation"></resource>		<vector2 name="14/shape_offset"> 0, 0 </vector2>
+		<array name="14/shapes" len="0" shared="false">
+		</array>
+		<string name="15/name"> "Sprite10098" </string>
+		<resource name="15/texture" external="0">  </resource>
+		<vector2 name="15/tex_offset"> 0, 0 </vector2>
+		<resource name="15/material"></resource>		<color name="15/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="15/region"> 32, 224, 32, 32 </rect2>
+		<vector2 name="15/occluder_offset"> -0, -0 </vector2>
+		<resource name="15/occluder"></resource>		<vector2 name="15/navigation_offset"> -0, -0 </vector2>
+		<resource name="15/navigation"></resource>		<vector2 name="15/shape_offset"> 0, 0 </vector2>
+		<array name="15/shapes" len="0" shared="false">
+		</array>
+		<string name="16/name"> "Sprite3" </string>
+		<resource name="16/texture" external="0">  </resource>
+		<vector2 name="16/tex_offset"> 0, 0 </vector2>
+		<resource name="16/material"></resource>		<color name="16/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="16/region"> 64, 0, 32, 32 </rect2>
+		<vector2 name="16/occluder_offset"> -0, -0 </vector2>
+		<resource name="16/occluder"></resource>		<vector2 name="16/navigation_offset"> -0, -0 </vector2>
+		<resource name="16/navigation"></resource>		<vector2 name="16/shape_offset"> 0, 0 </vector2>
+		<array name="16/shapes" len="0" shared="false">
+		</array>
+		<string name="17/name"> "Sprite9 3" </string>
+		<resource name="17/texture" external="0">  </resource>
+		<vector2 name="17/tex_offset"> 0, 0 </vector2>
+		<resource name="17/material"></resource>		<color name="17/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="17/region"> 64, 32, 32, 32 </rect2>
+		<vector2 name="17/occluder_offset"> -0, -0 </vector2>
+		<resource name="17/occluder"></resource>		<vector2 name="17/navigation_offset"> -0, -0 </vector2>
+		<resource name="17/navigation"></resource>		<vector2 name="17/shape_offset"> 0, 0 </vector2>
+		<array name="17/shapes" len="0" shared="false">
+		</array>
+		<string name="18/name"> "Sprite94" </string>
+		<resource name="18/texture" external="0">  </resource>
+		<vector2 name="18/tex_offset"> 0, 0 </vector2>
+		<resource name="18/material"></resource>		<color name="18/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="18/region"> 64, 64, 32, 32 </rect2>
+		<vector2 name="18/occluder_offset"> -0, -0 </vector2>
+		<resource name="18/occluder"></resource>		<vector2 name="18/navigation_offset"> -0, -0 </vector2>
+		<resource name="18/navigation"></resource>		<vector2 name="18/shape_offset"> 0, 0 </vector2>
+		<array name="18/shapes" len="0" shared="false">
+		</array>
+		<string name="19/name"> "Sprite100 5" </string>
+		<resource name="19/texture" external="0">  </resource>
+		<vector2 name="19/tex_offset"> 0, 0 </vector2>
+		<resource name="19/material"></resource>		<color name="19/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="19/region"> 64, 96, 32, 32 </rect2>
+		<vector2 name="19/occluder_offset"> -0, -0 </vector2>
+		<resource name="19/occluder"></resource>		<vector2 name="19/navigation_offset"> -0, -0 </vector2>
+		<resource name="19/navigation"></resource>		<vector2 name="19/shape_offset"> 0, 0 </vector2>
+		<array name="19/shapes" len="0" shared="false">
+		</array>
+		<string name="20/name"> "Sprite1006" </string>
+		<resource name="20/texture" external="0">  </resource>
+		<vector2 name="20/tex_offset"> 0, 0 </vector2>
+		<resource name="20/material"></resource>		<color name="20/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="20/region"> 64, 128, 32, 32 </rect2>
+		<vector2 name="20/occluder_offset"> -0, -0 </vector2>
+		<resource name="20/occluder"></resource>		<vector2 name="20/navigation_offset"> -0, -0 </vector2>
+		<resource name="20/navigation"></resource>		<vector2 name="20/shape_offset"> 0, 0 </vector2>
+		<array name="20/shapes" len="0" shared="false">
+		</array>
+		<string name="21/name"> "Sprite1009 4" </string>
+		<resource name="21/texture" external="0">  </resource>
+		<vector2 name="21/tex_offset"> 0, 0 </vector2>
+		<resource name="21/material"></resource>		<color name="21/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="21/region"> 64, 160, 32, 32 </rect2>
+		<vector2 name="21/occluder_offset"> -0, -0 </vector2>
+		<resource name="21/occluder"></resource>		<vector2 name="21/navigation_offset"> -0, -0 </vector2>
+		<resource name="21/navigation"></resource>		<vector2 name="21/shape_offset"> 0, 0 </vector2>
+		<array name="21/shapes" len="0" shared="false">
+		</array>
+		<string name="22/name"> "Sprite10095" </string>
+		<resource name="22/texture" external="0">  </resource>
+		<vector2 name="22/tex_offset"> 0, 0 </vector2>
+		<resource name="22/material"></resource>		<color name="22/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="22/region"> 64, 192, 32, 32 </rect2>
+		<vector2 name="22/occluder_offset"> -0, -0 </vector2>
+		<resource name="22/occluder"></resource>		<vector2 name="22/navigation_offset"> -0, -0 </vector2>
+		<resource name="22/navigation"></resource>		<vector2 name="22/shape_offset"> 0, 0 </vector2>
+		<array name="22/shapes" len="0" shared="false">
+		</array>
+		<string name="23/name"> "Sprite10098 4" </string>
+		<resource name="23/texture" external="0">  </resource>
+		<vector2 name="23/tex_offset"> 0, 0 </vector2>
+		<resource name="23/material"></resource>		<color name="23/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="23/region"> 64, 224, 32, 32 </rect2>
+		<vector2 name="23/occluder_offset"> -0, -0 </vector2>
+		<resource name="23/occluder"></resource>		<vector2 name="23/navigation_offset"> -0, -0 </vector2>
+		<resource name="23/navigation"></resource>		<vector2 name="23/shape_offset"> 0, 0 </vector2>
+		<array name="23/shapes" len="0" shared="false">
+		</array>
+		<string name="24/name"> "Sprite4" </string>
+		<resource name="24/texture" external="0">  </resource>
+		<vector2 name="24/tex_offset"> 0, 0 </vector2>
+		<resource name="24/material"></resource>		<color name="24/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="24/region"> 96, 0, 32, 32 </rect2>
+		<vector2 name="24/occluder_offset"> -0, -0 </vector2>
+		<resource name="24/occluder"></resource>		<vector2 name="24/navigation_offset"> -0, -0 </vector2>
+		<resource name="24/navigation"></resource>		<vector2 name="24/shape_offset"> 0, 0 </vector2>
+		<array name="24/shapes" len="0" shared="false">
+		</array>
+		<string name="25/name"> "Sprite9 2" </string>
+		<resource name="25/texture" external="0">  </resource>
+		<vector2 name="25/tex_offset"> 0, 0 </vector2>
+		<resource name="25/material"></resource>		<color name="25/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="25/region"> 96, 32, 32, 32 </rect2>
+		<vector2 name="25/occluder_offset"> -0, -0 </vector2>
+		<resource name="25/occluder"></resource>		<vector2 name="25/navigation_offset"> -0, -0 </vector2>
+		<resource name="25/navigation"></resource>		<vector2 name="25/shape_offset"> 0, 0 </vector2>
+		<array name="25/shapes" len="0" shared="false">
+		</array>
+		<string name="26/name"> "Sprite93" </string>
+		<resource name="26/texture" external="0">  </resource>
+		<vector2 name="26/tex_offset"> 0, 0 </vector2>
+		<resource name="26/material"></resource>		<color name="26/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="26/region"> 96, 64, 32, 32 </rect2>
+		<vector2 name="26/occluder_offset"> -0, -0 </vector2>
+		<resource name="26/occluder"></resource>		<vector2 name="26/navigation_offset"> -0, -0 </vector2>
+		<resource name="26/navigation"></resource>		<vector2 name="26/shape_offset"> 0, 0 </vector2>
+		<array name="26/shapes" len="0" shared="false">
+		</array>
+		<string name="27/name"> "Sprite100 3" </string>
+		<resource name="27/texture" external="0">  </resource>
+		<vector2 name="27/tex_offset"> 0, 0 </vector2>
+		<resource name="27/material"></resource>		<color name="27/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="27/region"> 96, 96, 32, 32 </rect2>
+		<vector2 name="27/occluder_offset"> -0, -0 </vector2>
+		<resource name="27/occluder"></resource>		<vector2 name="27/navigation_offset"> -0, -0 </vector2>
+		<resource name="27/navigation"></resource>		<vector2 name="27/shape_offset"> 0, 0 </vector2>
+		<array name="27/shapes" len="0" shared="false">
+		</array>
+		<string name="28/name"> "Sprite1004" </string>
+		<resource name="28/texture" external="0">  </resource>
+		<vector2 name="28/tex_offset"> 0, 0 </vector2>
+		<resource name="28/material"></resource>		<color name="28/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="28/region"> 96, 128, 32, 32 </rect2>
+		<vector2 name="28/occluder_offset"> -0, -0 </vector2>
+		<resource name="28/occluder"></resource>		<vector2 name="28/navigation_offset"> -0, -0 </vector2>
+		<resource name="28/navigation"></resource>		<vector2 name="28/shape_offset"> 0, 0 </vector2>
+		<array name="28/shapes" len="0" shared="false">
+		</array>
+		<string name="29/name"> "Sprite1009 2" </string>
+		<resource name="29/texture" external="0">  </resource>
+		<vector2 name="29/tex_offset"> 0, 0 </vector2>
+		<resource name="29/material"></resource>		<color name="29/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="29/region"> 96, 160, 32, 32 </rect2>
+		<vector2 name="29/occluder_offset"> -0, -0 </vector2>
+		<resource name="29/occluder"></resource>		<vector2 name="29/navigation_offset"> -0, -0 </vector2>
+		<resource name="29/navigation"></resource>		<vector2 name="29/shape_offset"> 0, 0 </vector2>
+		<array name="29/shapes" len="0" shared="false">
+		</array>
+		<string name="30/name"> "Sprite10093" </string>
+		<resource name="30/texture" external="0">  </resource>
+		<vector2 name="30/tex_offset"> 0, 0 </vector2>
+		<resource name="30/material"></resource>		<color name="30/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="30/region"> 96, 192, 32, 32 </rect2>
+		<vector2 name="30/occluder_offset"> -0, -0 </vector2>
+		<resource name="30/occluder"></resource>		<vector2 name="30/navigation_offset"> -0, -0 </vector2>
+		<resource name="30/navigation"></resource>		<vector2 name="30/shape_offset"> 0, 0 </vector2>
+		<array name="30/shapes" len="0" shared="false">
+		</array>
+		<string name="31/name"> "Sprite10098 2" </string>
+		<resource name="31/texture" external="0">  </resource>
+		<vector2 name="31/tex_offset"> 0, 0 </vector2>
+		<resource name="31/material"></resource>		<color name="31/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="31/region"> 96, 224, 32, 32 </rect2>
+		<vector2 name="31/occluder_offset"> -0, -0 </vector2>
+		<resource name="31/occluder"></resource>		<vector2 name="31/navigation_offset"> -0, -0 </vector2>
+		<resource name="31/navigation"></resource>		<vector2 name="31/shape_offset"> 0, 0 </vector2>
+		<array name="31/shapes" len="0" shared="false">
+		</array>
+		<string name="32/name"> "Sprite5" </string>
+		<resource name="32/texture" external="0">  </resource>
+		<vector2 name="32/tex_offset"> 0, 0 </vector2>
+		<resource name="32/material"></resource>		<color name="32/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="32/region"> 128, 0, 32, 32 </rect2>
+		<vector2 name="32/occluder_offset"> -0, -0 </vector2>
+		<resource name="32/occluder"></resource>		<vector2 name="32/navigation_offset"> -0, -0 </vector2>
+		<resource name="32/navigation"></resource>		<vector2 name="32/shape_offset"> 0, 0 </vector2>
+		<array name="32/shapes" len="0" shared="false">
+		</array>
+		<string name="33/name"> "Sprite9 5" </string>
+		<resource name="33/texture" external="0">  </resource>
+		<vector2 name="33/tex_offset"> 0, 0 </vector2>
+		<resource name="33/material"></resource>		<color name="33/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="33/region"> 128, 32, 32, 32 </rect2>
+		<vector2 name="33/occluder_offset"> -0, -0 </vector2>
+		<resource name="33/occluder"></resource>		<vector2 name="33/navigation_offset"> -0, -0 </vector2>
+		<resource name="33/navigation"></resource>		<vector2 name="33/shape_offset"> 0, 0 </vector2>
+		<array name="33/shapes" len="0" shared="false">
+		</array>
+		<string name="34/name"> "Sprite96" </string>
+		<resource name="34/texture" external="0">  </resource>
+		<vector2 name="34/tex_offset"> 0, 0 </vector2>
+		<resource name="34/material"></resource>		<color name="34/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="34/region"> 128, 64, 32, 32 </rect2>
+		<vector2 name="34/occluder_offset"> -0, -0 </vector2>
+		<resource name="34/occluder"></resource>		<vector2 name="34/navigation_offset"> -0, -0 </vector2>
+		<resource name="34/navigation"></resource>		<vector2 name="34/shape_offset"> 0, 0 </vector2>
+		<array name="34/shapes" len="0" shared="false">
+		</array>
+		<string name="35/name"> "Sprite100 4" </string>
+		<resource name="35/texture" external="0">  </resource>
+		<vector2 name="35/tex_offset"> 0, 0 </vector2>
+		<resource name="35/material"></resource>		<color name="35/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="35/region"> 128, 96, 32, 32 </rect2>
+		<vector2 name="35/occluder_offset"> -0, -0 </vector2>
+		<resource name="35/occluder"></resource>		<vector2 name="35/navigation_offset"> -0, -0 </vector2>
+		<resource name="35/navigation"></resource>		<vector2 name="35/shape_offset"> 0, 0 </vector2>
+		<array name="35/shapes" len="0" shared="false">
+		</array>
+		<string name="36/name"> "Sprite1005" </string>
+		<resource name="36/texture" external="0">  </resource>
+		<vector2 name="36/tex_offset"> 0, 0 </vector2>
+		<resource name="36/material"></resource>		<color name="36/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="36/region"> 128, 128, 32, 32 </rect2>
+		<vector2 name="36/occluder_offset"> -0, -0 </vector2>
+		<resource name="36/occluder"></resource>		<vector2 name="36/navigation_offset"> -0, -0 </vector2>
+		<resource name="36/navigation"></resource>		<vector2 name="36/shape_offset"> 0, 0 </vector2>
+		<array name="36/shapes" len="0" shared="false">
+		</array>
+		<string name="37/name"> "Sprite1009 3" </string>
+		<resource name="37/texture" external="0">  </resource>
+		<vector2 name="37/tex_offset"> 0, 0 </vector2>
+		<resource name="37/material"></resource>		<color name="37/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="37/region"> 128, 160, 32, 32 </rect2>
+		<vector2 name="37/occluder_offset"> -0, -0 </vector2>
+		<resource name="37/occluder"></resource>		<vector2 name="37/navigation_offset"> -0, -0 </vector2>
+		<resource name="37/navigation"></resource>		<vector2 name="37/shape_offset"> 0, 0 </vector2>
+		<array name="37/shapes" len="0" shared="false">
+		</array>
+		<string name="38/name"> "Sprite10094" </string>
+		<resource name="38/texture" external="0">  </resource>
+		<vector2 name="38/tex_offset"> 0, 0 </vector2>
+		<resource name="38/material"></resource>		<color name="38/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="38/region"> 128, 192, 32, 32 </rect2>
+		<vector2 name="38/occluder_offset"> -0, -0 </vector2>
+		<resource name="38/occluder"></resource>		<vector2 name="38/navigation_offset"> -0, -0 </vector2>
+		<resource name="38/navigation"></resource>		<vector2 name="38/shape_offset"> 0, 0 </vector2>
+		<array name="38/shapes" len="0" shared="false">
+		</array>
+		<string name="39/name"> "Sprite10098 3" </string>
+		<resource name="39/texture" external="0">  </resource>
+		<vector2 name="39/tex_offset"> 0, 0 </vector2>
+		<resource name="39/material"></resource>		<color name="39/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="39/region"> 128, 224, 32, 32 </rect2>
+		<vector2 name="39/occluder_offset"> -0, -0 </vector2>
+		<resource name="39/occluder"></resource>		<vector2 name="39/navigation_offset"> -0, -0 </vector2>
+		<resource name="39/navigation"></resource>		<vector2 name="39/shape_offset"> 0, 0 </vector2>
+		<array name="39/shapes" len="0" shared="false">
+		</array>
+		<string name="40/name"> "Sprite6" </string>
+		<resource name="40/texture" external="0">  </resource>
+		<vector2 name="40/tex_offset"> 0, 0 </vector2>
+		<resource name="40/material"></resource>		<color name="40/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="40/region"> 160, 0, 32, 32 </rect2>
+		<vector2 name="40/occluder_offset"> -0, -0 </vector2>
+		<resource name="40/occluder"></resource>		<vector2 name="40/navigation_offset"> -0, -0 </vector2>
+		<resource name="40/navigation"></resource>		<vector2 name="40/shape_offset"> 0, 0 </vector2>
+		<array name="40/shapes" len="0" shared="false">
+		</array>
+		<string name="41/name"> "Sprite9 6" </string>
+		<resource name="41/texture" external="0">  </resource>
+		<vector2 name="41/tex_offset"> 0, 0 </vector2>
+		<resource name="41/material"></resource>		<color name="41/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="41/region"> 160, 32, 32, 32 </rect2>
+		<vector2 name="41/occluder_offset"> -0, -0 </vector2>
+		<resource name="41/occluder"></resource>		<vector2 name="41/navigation_offset"> -0, -0 </vector2>
+		<resource name="41/navigation"></resource>		<vector2 name="41/shape_offset"> 0, 0 </vector2>
+		<array name="41/shapes" len="0" shared="false">
+		</array>
+		<string name="42/name"> "Sprite97" </string>
+		<resource name="42/texture" external="0">  </resource>
+		<vector2 name="42/tex_offset"> 0, 0 </vector2>
+		<resource name="42/material"></resource>		<color name="42/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="42/region"> 160, 64, 32, 32 </rect2>
+		<vector2 name="42/occluder_offset"> -0, -0 </vector2>
+		<resource name="42/occluder"></resource>		<vector2 name="42/navigation_offset"> -0, -0 </vector2>
+		<resource name="42/navigation"></resource>		<vector2 name="42/shape_offset"> 0, 0 </vector2>
+		<array name="42/shapes" len="0" shared="false">
+		</array>
+		<string name="43/name"> "Sprite100" </string>
+		<resource name="43/texture" external="0">  </resource>
+		<vector2 name="43/tex_offset"> 0, 0 </vector2>
+		<resource name="43/material"></resource>		<color name="43/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="43/region"> 160, 96, 32, 32 </rect2>
+		<vector2 name="43/occluder_offset"> -0, -0 </vector2>
+		<resource name="43/occluder"></resource>		<vector2 name="43/navigation_offset"> -0, -0 </vector2>
+		<resource name="43/navigation"></resource>		<vector2 name="43/shape_offset"> 0, 0 </vector2>
+		<array name="43/shapes" len="0" shared="false">
+		</array>
+		<string name="44/name"> "Sprite101" </string>
+		<resource name="44/texture" external="0">  </resource>
+		<vector2 name="44/tex_offset"> 0, 0 </vector2>
+		<resource name="44/material"></resource>		<color name="44/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="44/region"> 160, 128, 32, 32 </rect2>
+		<vector2 name="44/occluder_offset"> -0, -0 </vector2>
+		<resource name="44/occluder"></resource>		<vector2 name="44/navigation_offset"> -0, -0 </vector2>
+		<resource name="44/navigation"></resource>		<vector2 name="44/shape_offset"> 0, 0 </vector2>
+		<array name="44/shapes" len="0" shared="false">
+		</array>
+		<string name="45/name"> "Sprite102" </string>
+		<resource name="45/texture" external="0">  </resource>
+		<vector2 name="45/tex_offset"> 0, 0 </vector2>
+		<resource name="45/material"></resource>		<color name="45/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="45/region"> 160, 160, 32, 32 </rect2>
+		<vector2 name="45/occluder_offset"> -0, -0 </vector2>
+		<resource name="45/occluder"></resource>		<vector2 name="45/navigation_offset"> -0, -0 </vector2>
+		<resource name="45/navigation"></resource>		<vector2 name="45/shape_offset"> 0, 0 </vector2>
+		<array name="45/shapes" len="0" shared="false">
+		</array>
+		<string name="46/name"> "Sprite103" </string>
+		<resource name="46/texture" external="0">  </resource>
+		<vector2 name="46/tex_offset"> 0, 0 </vector2>
+		<resource name="46/material"></resource>		<color name="46/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="46/region"> 160, 192, 32, 32 </rect2>
+		<vector2 name="46/occluder_offset"> -0, -0 </vector2>
+		<resource name="46/occluder"></resource>		<vector2 name="46/navigation_offset"> -0, -0 </vector2>
+		<resource name="46/navigation"></resource>		<vector2 name="46/shape_offset"> 0, 0 </vector2>
+		<array name="46/shapes" len="0" shared="false">
+		</array>
+		<string name="47/name"> "Sprite104" </string>
+		<resource name="47/texture" external="0">  </resource>
+		<vector2 name="47/tex_offset"> 0, 0 </vector2>
+		<resource name="47/material"></resource>		<color name="47/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="47/region"> 160, 224, 32, 32 </rect2>
+		<vector2 name="47/occluder_offset"> -0, -0 </vector2>
+		<resource name="47/occluder"></resource>		<vector2 name="47/navigation_offset"> -0, -0 </vector2>
+		<resource name="47/navigation"></resource>		<vector2 name="47/shape_offset"> 0, 0 </vector2>
+		<array name="47/shapes" len="0" shared="false">
+		</array>
+		<string name="48/name"> "Sprite7" </string>
+		<resource name="48/texture" external="0">  </resource>
+		<vector2 name="48/tex_offset"> 0, 0 </vector2>
+		<resource name="48/material"></resource>		<color name="48/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="48/region"> 192, 0, 32, 32 </rect2>
+		<vector2 name="48/occluder_offset"> -0, -0 </vector2>
+		<resource name="48/occluder"></resource>		<vector2 name="48/navigation_offset"> -0, -0 </vector2>
+		<resource name="48/navigation"></resource>		<vector2 name="48/shape_offset"> 0, 0 </vector2>
+		<array name="48/shapes" len="0" shared="false">
+		</array>
+		<string name="49/name"> "Sprite9 7" </string>
+		<resource name="49/texture" external="0">  </resource>
+		<vector2 name="49/tex_offset"> 0, 0 </vector2>
+		<resource name="49/material"></resource>		<color name="49/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="49/region"> 192, 32, 32, 32 </rect2>
+		<vector2 name="49/occluder_offset"> -0, -0 </vector2>
+		<resource name="49/occluder"></resource>		<vector2 name="49/navigation_offset"> -0, -0 </vector2>
+		<resource name="49/navigation"></resource>		<vector2 name="49/shape_offset"> 0, 0 </vector2>
+		<array name="49/shapes" len="0" shared="false">
+		</array>
+		<string name="50/name"> "Sprite98" </string>
+		<resource name="50/texture" external="0">  </resource>
+		<vector2 name="50/tex_offset"> 0, 0 </vector2>
+		<resource name="50/material"></resource>		<color name="50/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="50/region"> 192, 64, 32, 32 </rect2>
+		<vector2 name="50/occluder_offset"> -0, -0 </vector2>
+		<resource name="50/occluder"></resource>		<vector2 name="50/navigation_offset"> -0, -0 </vector2>
+		<resource name="50/navigation"></resource>		<vector2 name="50/shape_offset"> 0, 0 </vector2>
+		<array name="50/shapes" len="0" shared="false">
+		</array>
+		<string name="51/name"> "Sprite100 2" </string>
+		<resource name="51/texture" external="0">  </resource>
+		<vector2 name="51/tex_offset"> 0, 0 </vector2>
+		<resource name="51/material"></resource>		<color name="51/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="51/region"> 192, 96, 32, 32 </rect2>
+		<vector2 name="51/occluder_offset"> -0, -0 </vector2>
+		<resource name="51/occluder"></resource>		<vector2 name="51/navigation_offset"> -0, -0 </vector2>
+		<resource name="51/navigation"></resource>		<vector2 name="51/shape_offset"> 0, 0 </vector2>
+		<array name="51/shapes" len="0" shared="false">
+		</array>
+		<string name="52/name"> "Sprite1003" </string>
+		<resource name="52/texture" external="0">  </resource>
+		<vector2 name="52/tex_offset"> 0, 0 </vector2>
+		<resource name="52/material"></resource>		<color name="52/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="52/region"> 192, 128, 32, 32 </rect2>
+		<vector2 name="52/occluder_offset"> -0, -0 </vector2>
+		<resource name="52/occluder"></resource>		<vector2 name="52/navigation_offset"> -0, -0 </vector2>
+		<resource name="52/navigation"></resource>		<vector2 name="52/shape_offset"> 0, 0 </vector2>
+		<array name="52/shapes" len="0" shared="false">
+		</array>
+		<string name="53/name"> "Sprite1009" </string>
+		<resource name="53/texture" external="0">  </resource>
+		<vector2 name="53/tex_offset"> 0, 0 </vector2>
+		<resource name="53/material"></resource>		<color name="53/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="53/region"> 192, 160, 32, 32 </rect2>
+		<vector2 name="53/occluder_offset"> -0, -0 </vector2>
+		<resource name="53/occluder"></resource>		<vector2 name="53/navigation_offset"> -0, -0 </vector2>
+		<resource name="53/navigation"></resource>		<vector2 name="53/shape_offset"> 0, 0 </vector2>
+		<array name="53/shapes" len="0" shared="false">
+		</array>
+		<string name="54/name"> "Sprite1010" </string>
+		<resource name="54/texture" external="0">  </resource>
+		<vector2 name="54/tex_offset"> 0, 0 </vector2>
+		<resource name="54/material"></resource>		<color name="54/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="54/region"> 192, 192, 32, 32 </rect2>
+		<vector2 name="54/occluder_offset"> -0, -0 </vector2>
+		<resource name="54/occluder"></resource>		<vector2 name="54/navigation_offset"> -0, -0 </vector2>
+		<resource name="54/navigation"></resource>		<vector2 name="54/shape_offset"> 0, 0 </vector2>
+		<array name="54/shapes" len="0" shared="false">
+		</array>
+		<string name="55/name"> "Sprite1011" </string>
+		<resource name="55/texture" external="0">  </resource>
+		<vector2 name="55/tex_offset"> 0, 0 </vector2>
+		<resource name="55/material"></resource>		<color name="55/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="55/region"> 192, 224, 32, 32 </rect2>
+		<vector2 name="55/occluder_offset"> -0, -0 </vector2>
+		<resource name="55/occluder"></resource>		<vector2 name="55/navigation_offset"> -0, -0 </vector2>
+		<resource name="55/navigation"></resource>		<vector2 name="55/shape_offset"> 0, 0 </vector2>
+		<array name="55/shapes" len="0" shared="false">
+		</array>
+		<string name="56/name"> "Sprite8" </string>
+		<resource name="56/texture" external="0">  </resource>
+		<vector2 name="56/tex_offset"> 0, 0 </vector2>
+		<resource name="56/material"></resource>		<color name="56/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="56/region"> 224, 0, 32, 32 </rect2>
+		<vector2 name="56/occluder_offset"> -0, -0 </vector2>
+		<resource name="56/occluder"></resource>		<vector2 name="56/navigation_offset"> -0, -0 </vector2>
+		<resource name="56/navigation"></resource>		<vector2 name="56/shape_offset"> 0, 0 </vector2>
+		<array name="56/shapes" len="0" shared="false">
+		</array>
+		<string name="57/name"> "Sprite9 8" </string>
+		<resource name="57/texture" external="0">  </resource>
+		<vector2 name="57/tex_offset"> 0, 0 </vector2>
+		<resource name="57/material"></resource>		<color name="57/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="57/region"> 224, 32, 32, 32 </rect2>
+		<vector2 name="57/occluder_offset"> -0, -0 </vector2>
+		<resource name="57/occluder"></resource>		<vector2 name="57/navigation_offset"> -0, -0 </vector2>
+		<resource name="57/navigation"></resource>		<vector2 name="57/shape_offset"> 0, 0 </vector2>
+		<array name="57/shapes" len="0" shared="false">
+		</array>
+		<string name="58/name"> "Sprite99" </string>
+		<resource name="58/texture" external="0">  </resource>
+		<vector2 name="58/tex_offset"> 0, 0 </vector2>
+		<resource name="58/material"></resource>		<color name="58/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="58/region"> 224, 64, 32, 32 </rect2>
+		<vector2 name="58/occluder_offset"> -0, -0 </vector2>
+		<resource name="58/occluder"></resource>		<vector2 name="58/navigation_offset"> -0, -0 </vector2>
+		<resource name="58/navigation"></resource>		<vector2 name="58/shape_offset"> 0, 0 </vector2>
+		<array name="58/shapes" len="0" shared="false">
+		</array>
+		<string name="59/name"> "Sprite100 7" </string>
+		<resource name="59/texture" external="0">  </resource>
+		<vector2 name="59/tex_offset"> 0, 0 </vector2>
+		<resource name="59/material"></resource>		<color name="59/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="59/region"> 224, 96, 32, 32 </rect2>
+		<vector2 name="59/occluder_offset"> -0, -0 </vector2>
+		<resource name="59/occluder"></resource>		<vector2 name="59/navigation_offset"> -0, -0 </vector2>
+		<resource name="59/navigation"></resource>		<vector2 name="59/shape_offset"> 0, 0 </vector2>
+		<array name="59/shapes" len="0" shared="false">
+		</array>
+		<string name="60/name"> "Sprite1008" </string>
+		<resource name="60/texture" external="0">  </resource>
+		<vector2 name="60/tex_offset"> 0, 0 </vector2>
+		<resource name="60/material"></resource>		<color name="60/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="60/region"> 224, 128, 32, 32 </rect2>
+		<vector2 name="60/occluder_offset"> -0, -0 </vector2>
+		<resource name="60/occluder"></resource>		<vector2 name="60/navigation_offset"> -0, -0 </vector2>
+		<resource name="60/navigation"></resource>		<vector2 name="60/shape_offset"> 0, 0 </vector2>
+		<array name="60/shapes" len="0" shared="false">
+		</array>
+		<string name="61/name"> "Sprite1009 6" </string>
+		<resource name="61/texture" external="0">  </resource>
+		<vector2 name="61/tex_offset"> 0, 0 </vector2>
+		<resource name="61/material"></resource>		<color name="61/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="61/region"> 224, 160, 32, 32 </rect2>
+		<vector2 name="61/occluder_offset"> -0, -0 </vector2>
+		<resource name="61/occluder"></resource>		<vector2 name="61/navigation_offset"> -0, -0 </vector2>
+		<resource name="61/navigation"></resource>		<vector2 name="61/shape_offset"> 0, 0 </vector2>
+		<array name="61/shapes" len="0" shared="false">
+		</array>
+		<string name="62/name"> "Sprite10097" </string>
+		<resource name="62/texture" external="0">  </resource>
+		<vector2 name="62/tex_offset"> 0, 0 </vector2>
+		<resource name="62/material"></resource>		<color name="62/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="62/region"> 224, 192, 32, 32 </rect2>
+		<vector2 name="62/occluder_offset"> -0, -0 </vector2>
+		<resource name="62/occluder"></resource>		<vector2 name="62/navigation_offset"> -0, -0 </vector2>
+		<resource name="62/navigation"></resource>		<vector2 name="62/shape_offset"> 0, 0 </vector2>
+		<array name="62/shapes" len="0" shared="false">
+		</array>
+		<string name="63/name"> "Sprite10098 5" </string>
+		<resource name="63/texture" external="0">  </resource>
+		<vector2 name="63/tex_offset"> 0, 0 </vector2>
+		<resource name="63/material"></resource>		<color name="63/modulate"> 1, 1, 1, 1 </color>
+		<rect2 name="63/region"> 224, 224, 32, 32 </rect2>
+		<vector2 name="63/occluder_offset"> -0, -0 </vector2>
+		<resource name="63/occluder"></resource>		<vector2 name="63/navigation_offset"> -0, -0 </vector2>
+		<resource name="63/navigation"></resource>		<vector2 name="63/shape_offset"> 0, 0 </vector2>
+		<array name="63/shapes" len="0" shared="false">
+		</array>
+
+	</main_resource>
+</resource_file>
