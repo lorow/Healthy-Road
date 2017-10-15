@@ -10,5 +10,5 @@ func _ready():
 	actualScreen = get_node("TextureFrame")
 	get_node("HamburgerMenu").connect("moveScreen", self, "_on_moveScreen")
 
-func _on_moveScreen(actPosX, time):
+func _on_moveScreen(actPosX):
 	actualScreen.set_pos(Vector2(actPosX, actualScreen.get_pos().y))
