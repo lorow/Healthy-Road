@@ -13,9 +13,9 @@ var startPos = null
 var actPos = null
 var direction = null
 
-var pos
+var pos = null
 
-var maxPos = 221
+var maxPos = 220
 var minPos = 0
 
 func _ready():
@@ -31,16 +31,16 @@ func _process(delta):
 		if direction == 2 and pos.x > minPos:
 			tween.interpolate_property(self,"rect/pos", pos, Vector2(actPos.x - (pos.x - startPos.x)/2, pos.y), 0.2, Tween.TRANS_LINEAR, Tween.EASE_OUT)
 			tween.start()
-			
+
 		if pos.x > maxPos + 1:
 			tween.stop(self, "rect/pos")
 			set_pos(Vector2(maxPos, pos.y))
 		if pos.x < minPos - 1:
 			tween.stop(self, "rect/pos")
 			set_pos(Vector2(minPos, pos.y))
-			
+
 		emit_signal("moveScreen", pos.x , timeTween)
-			
+
 func _input(ev):
 	if ev.type == InputEvent.SCREEN_TOUCH and touchUtils.checkIfInside(ev, touchDetector.get_pos(), touchDetector.get_size()):
 		if ev.pressed:

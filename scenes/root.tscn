@@ -38,7 +38,6 @@ stretch_mode = 0
 
 [node name="HamburgerMenu" parent="UI" instance=ExtResource( 4 )]
 
-editor/display_folded = true
 anchor/right = 0
 anchor/bottom = 1
 margin/top = 170.0
