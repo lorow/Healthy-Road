@@ -38,11 +38,9 @@ stretch_mode = 0
 
 [node name="HamburgerMenu" parent="UI" instance=ExtResource( 4 )]
 
-anchor/right = 0
-anchor/bottom = 1
 margin/top = 170.0
-margin/right = 42.0
-margin/bottom = -170.0
+margin/right = -50.0
+margin/bottom = 1920.0
 
 [node name="tween" type="Tween" parent="UI"]
 
@@ -52,4 +50,3 @@ playback/repeat = false
 playback/speed = 1.0
 
 
-[editable path="UI/HamburgerMenu"]

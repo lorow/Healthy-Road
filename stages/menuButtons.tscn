@@ -1,0 +1,87 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://textures/icon.png" type="Texture" id=1]
+
+[node name="menuButtons" type="Control"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 220.0
+margin/bottom = 1750.0
+
+[node name="TextureFrame" type="TextureFrame" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 270.0
+margin/right = 220.0
+margin/bottom = 490.0
+texture = ExtResource( 1 )
+modulate = Color( 0.172938, 0.527344, 0.152435, 1 )
+stretch_mode = 0
+
+[node name="TextureFrame1" type="TextureFrame" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 510.0
+margin/right = 220.0
+margin/bottom = 730.0
+texture = ExtResource( 1 )
+modulate = Color( 0.172938, 0.527344, 0.152435, 1 )
+stretch_mode = 0
+
+[node name="TextureFrame2" type="TextureFrame" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 750.0
+margin/right = 220.0
+margin/bottom = 970.0
+texture = ExtResource( 1 )
+modulate = Color( 0.172938, 0.527344, 0.152435, 1 )
+stretch_mode = 0
+
+[node name="TextureFrame3" type="TextureFrame" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 990.0
+margin/right = 220.0
+margin/bottom = 1210.0
+texture = ExtResource( 1 )
+modulate = Color( 0.172938, 0.527344, 0.152435, 1 )
+stretch_mode = 0
+
+[node name="TextureFrame4" type="TextureFrame" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 1230.0
+margin/right = 220.0
+margin/bottom = 1450.0
+texture = ExtResource( 1 )
+modulate = Color( 0.172938, 0.527344, 0.152435, 1 )
+stretch_mode = 0
+
+

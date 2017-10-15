@@ -3,6 +3,8 @@ extends Control
 var tween
 var actualScreen # this will be set by system controlling buttons and main screens
 
+var buttonGroup
+
 func _ready():
 	tween = get_node("tween")
 	actualScreen = get_node("TextureFrame")
