@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=1]
+[gd_scene load_steps=6 format=1]
 
 [ext_resource path="res://scripts/HamburgerMenu.gd" type="Script" id=1]
 [ext_resource path="res://textures/white.png" type="Texture" id=2]
+[ext_resource path="res://scripts/buttonHandler.gd" type="Script" id=3]
+[ext_resource path="res://textures/icon.png" type="Texture" id=4]
+[ext_resource path="res://scripts/switchScreen.gd" type="Script" id=5]
 
 [node name="HamburgerMenu" type="Control"]
 
@@ -10,11 +13,19 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = -220.0
+margin/left = -400.0
 margin/top = 0.0
 margin/right = 990.0
 margin/bottom = 1750.0
 script/script = ExtResource( 1 )
+menuSize = -400
+
+[node name="Tween" type="Tween" parent="."]
+
+playback/process_mode = 1
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
 
 [node name="menu" type="Patch9Frame" parent="."]
 
@@ -28,16 +39,132 @@ margin/top = 0.0
 margin/right = 90.0
 margin/bottom = 1750.0
 texture = ExtResource( 2 )
+modulate = Color( 0.640625, 1, 1, 1 )
+script/script = ExtResource( 3 )
 
-[node name="TouchDetecor" type="Control" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="menu"]
+
+anchor/left = 3
+anchor/right = 3
+anchor/bottom = 1
+rect/min_size = Vector2( 220, 1750 )
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 110.0
+margin/top = 0.0
+margin/right = -110.0
+margin/bottom = 0.0
+custom_constants/separation = 20
+alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="menu/VBoxContainer"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
+margin/top = 285.0
+margin/right = 220.0
+margin/bottom = 505.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 4 )
+params/resize_mode = 0
+params/stretch_mode = 0
+script/script = ExtResource( 5 )
+screenName = "test"
+
+[node name="TextureButton1" type="TextureButton" parent="menu/VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 525.0
+margin/right = 220.0
+margin/bottom = 745.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 4 )
+params/resize_mode = 0
+params/stretch_mode = 0
+script/script = ExtResource( 5 )
+screenName = "test"
+
+[node name="TextureButton2" type="TextureButton" parent="menu/VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 765.0
+margin/right = 220.0
+margin/bottom = 985.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 4 )
+params/resize_mode = 0
+params/stretch_mode = 0
+script/script = ExtResource( 5 )
+screenName = "test"
+
+[node name="TextureButton3" type="TextureButton" parent="menu/VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 1005.0
+margin/right = 220.0
+margin/bottom = 1225.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 4 )
+params/resize_mode = 0
+params/stretch_mode = 0
+script/script = ExtResource( 5 )
+screenName = "test"
+
+[node name="TextureButton4" type="TextureButton" parent="menu/VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 1245.0
+margin/right = 220.0
+margin/bottom = 1465.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 4 )
+params/resize_mode = 0
+params/stretch_mode = 0
+script/script = ExtResource( 5 )
+screenName = "test"
+
+[node name="TouchDetecor" type="Control" parent="."]
+
+anchor/left = 1
+anchor/right = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 90.0
 margin/top = 0.0
-margin/right = 90.0
+margin/right = 0.0
 margin/bottom = 1750.0
 
 [node name="TextureFrame" type="TextureFrame" parent="TouchDetecor"]
@@ -46,37 +173,13 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 220.0
+margin/left = 0.0
 margin/top = 0.0
-margin/right = 310.0
+margin/right = 90.0
 margin/bottom = 1750.0
 texture = ExtResource( 2 )
 modulate = Color( 0.867188, 0.0304871, 0.0304871, 1 )
 expand = true
 stretch_mode = 0
-
-[node name="Tween" type="Tween" parent="."]
-
-playback/process_mode = 1
-playback/active = false
-playback/repeat = false
-playback/speed = 1.0
-
-[node name="fuck" type="RichTextLabel" parent="."]
-
-rect/scale = Vector2( 3, 3 )
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 240.0
-margin/top = 430.0
-margin/right = 500.0
-margin/bottom = 580.0
-custom_colors/default_color = Color( 1, 0.398438, 0, 1 )
-bbcode/enabled = false
-bbcode/bbcode = ""
-visible_characters = -1
-percent_visible = 1.0
 
 
