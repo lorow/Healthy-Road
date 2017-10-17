@@ -18,21 +18,17 @@ func _input(ev):
 		if ev.type==InputEvent.SCREEN_TOUCH:
 			if ev.pressed and touchUtils.checkIfInside(ev, get_pos(), get_size()):
 				offset = (get_size().x/2) - ev.pos.x
-				print("pressed")
 				touched = true
-
-			if not ev.pressed:
+			if not ev.pressed :
 				touched = false
-				print("released")
-
-			if not ev.pressed and moved:
-				if abs(menuSize - get_pos().x) < abs(0 - get_pos().x):
-					tween.interpolate_property(self, "rect/pos", get_pos(), Vector2(menuSize, get_pos().y), 0.2, Tween.TRANS_LINEAR, Tween.EASE_OUT)
-				else:
-					tween.interpolate_property(self, "rect/pos", get_pos(), Vector2(0, get_pos().y), 0.2, Tween.TRANS_LINEAR, Tween.EASE_OUT)
-				tween.start()
-				emit_move_signal()
-				moved = false
+				if moved:
+					if abs(menuSize - get_pos().x) < abs(0 - get_pos().x):
+						tween.interpolate_property(self, "rect/pos", get_pos(), Vector2(menuSize, get_pos().y), 0.2, Tween.TRANS_LINEAR, Tween.EASE_OUT)
+					else:
+						tween.interpolate_property(self, "rect/pos", get_pos(), Vector2(0, get_pos().y), 0.2, Tween.TRANS_LINEAR, Tween.EASE_OUT)
+					tween.start()
+					emit_move_signal()
+					moved = false
 
 		if ev.type==InputEvent.SCREEN_DRAG and touched:
 			if not offset == null:
