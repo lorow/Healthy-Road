@@ -21,6 +21,7 @@ script/script = ExtResource( 1 )
 
 [node name="Screens" type="Control" parent="UI"]
 
+editor/display_folded = true
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -71,23 +72,23 @@ margin/bottom = 1920.0
 
 [node name="TextureButton" parent="UI/HamburgerMenu/menu/VBoxContainer"]
 
-screenIndex = 0
+screenIndexToShow = 0
 
 [node name="TextureButton1" parent="UI/HamburgerMenu/menu/VBoxContainer"]
 
-screenIndex = 1
+screenIndexToShow = 1
 
 [node name="TextureButton2" parent="UI/HamburgerMenu/menu/VBoxContainer"]
 
-screenIndex = 0
+screenIndexToShow = 0
 
 [node name="TextureButton3" parent="UI/HamburgerMenu/menu/VBoxContainer"]
 
-screenIndex = 0
+screenIndexToShow = 0
 
 [node name="TextureButton4" parent="UI/HamburgerMenu/menu/VBoxContainer"]
 
-screenIndex = 0
+screenIndexToShow = 0
 
 [node name="TouchDetecor" parent="UI/HamburgerMenu"]
 
