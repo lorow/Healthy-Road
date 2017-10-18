@@ -8,6 +8,7 @@ var touched = true
 onready var tween = get_node("Tween")
 onready var touch = get_node("TouchDetecor")
 signal moveScreen
+signal maxPos
 var changingScreen = false
 
 
@@ -39,6 +40,7 @@ func _input(ev):
 					moved = true
 					set_pos(nextPos)
 					emit_move_signal()
+					if get_pos().x >= menuSize: emit_signal("maxPos")
 
 func emit_move_signal(object = null, key = null, elapsed = null, value = null):
 	emit_signal("moveScreen", get_pos().x + get_size().x - 90)
