@@ -11,7 +11,6 @@ signal moveScreen
 signal maxPos
 var changingScreen = false
 
-
 func _ready():
 	tween.connect("tween_step", self, "emit_move_signal")
 	set_process_input(true)
