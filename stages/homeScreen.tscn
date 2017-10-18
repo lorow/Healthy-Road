@@ -1,10 +1,14 @@
-[gd_scene load_steps=2 format=1]
+[gd_scene load_steps=8 format=1]
 
-[ext_resource path="res://sprites/rec_for_today.tex" type="Texture" id=1]
+[ext_resource path="res://sprites/homescreen/rec_for_today.tex" type="Texture" id=1]
+[ext_resource path="res://sprites/homescreen/truskawka.tex" type="Texture" id=2]
+[ext_resource path="res://sprites/homescreen/brokula.tex" type="Texture" id=3]
+[ext_resource path="res://sprites/homescreen/kukurydza.tex" type="Texture" id=4]
+[ext_resource path="res://sprites/homescreen/banan.tex" type="Texture" id=5]
+[ext_resource path="res://sprites/homescreen/pomidor.tex" type="Texture" id=6]
+[ext_resource path="res://sprites/homescreen/wisnie.tex" type="Texture" id=7]
 
-[node name="Node" type="Node"]
-
-[node name="Control" type="Control" parent="."]
+[node name="Node" type="Control"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -15,21 +19,117 @@ margin/top = 170.0
 margin/right = 1080.0
 margin/bottom = 1920.0
 
-[node name="TextureButton" type="TextureButton" parent="Control"]
+[node name="TextureButton" type="TextureButton" parent="."]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 40.0
-margin/top = 120.0
+margin/top = 170.0
 margin/right = 1045.0
-margin/bottom = 623.0
+margin/bottom = 673.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 textures/normal = ExtResource( 1 )
 params/resize_mode = 0
 params/stretch_mode = 0
+
+[node name="Ikonki" type="Control" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 40.0
+margin/bottom = 40.0
+
+[node name="Truskawka" type="TextureFrame" parent="Ikonki"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 854.0
+margin/top = 433.0
+margin/right = 1019.0
+margin/bottom = 625.0
+texture = ExtResource( 2 )
+stretch_mode = 0
+
+[node name="Brokula" type="TextureFrame" parent="Ikonki"]
+
+rect/rotation = 10.0
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -1.0
+margin/top = 113.0
+margin/right = 230.0
+margin/bottom = 379.0
+texture = ExtResource( 3 )
+stretch_mode = 0
+
+[node name="Kukurydza" type="TextureFrame" parent="Ikonki"]
+
+rect/rotation = -10.0
+rect/scale = Vector2( 0.8, 0.8 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 901.0
+margin/top = 89.0
+margin/right = 1092.0
+margin/bottom = 419.0
+texture = ExtResource( 4 )
+stretch_mode = 0
+
+[node name="Banana" type="TextureFrame" parent="Ikonki"]
+
+rect/rotation = -25.0
+rect/scale = Vector2( 0.75, 0.75 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 287.0
+margin/top = 193.0
+margin/right = 457.0
+margin/bottom = 579.0
+texture = ExtResource( 5 )
+stretch_mode = 0
+
+[node name="Pomidor" type="TextureFrame" parent="Ikonki"]
+
+rect/scale = Vector2( 0.8, 0.8 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 33.0
+margin/top = 396.0
+margin/right = 262.0
+margin/bottom = 686.0
+texture = ExtResource( 6 )
+stretch_mode = 0
+
+[node name="Wisnia" type="TextureFrame" parent="Ikonki"]
+
+rect/rotation = 25.0
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 589.0
+margin/top = 256.0
+margin/right = 799.0
+margin/bottom = 538.0
+texture = ExtResource( 7 )
+stretch_mode = 0
 
 

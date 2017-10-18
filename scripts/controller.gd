@@ -15,14 +15,14 @@ func _on_change_actual_screen(index):
 	moveScreens()
 	
 func moveScreens():
-	tween.interpolate_property(actualScreen, "rect/pos", actualScreen.get_pos(), Vector2(1080,0),0.1, Tween.TRANS_LINEAR, Tween.EASE_OUT)
-	tween.interpolate_property(nextScreen, "rect/pos", nextScreen.get_pos(), Vector2(0,0),0.1, Tween.TRANS_LINEAR, Tween.EASE_OUT)	
+	tween.interpolate_property(actualScreen, "rect/pos", actualScreen.get_pos(), Vector2(1080, actualScreen.get_pos().y),0.1, Tween.TRANS_LINEAR, Tween.EASE_OUT)
+	tween.interpolate_property(nextScreen, "rect/pos", nextScreen.get_pos(), Vector2(0,nextScreen.get_pos().y),0.1, Tween.TRANS_LINEAR, Tween.EASE_OUT)	
 	tween.start()
 	
 func resetPreviousMainScreen(x,y):
 	#first, check if actual screen is realy outside of the screen
 	if (actualScreen.get_pos().x >= 1080):
-		actualScreen.set_pos(Vector2(-1080, 0))
+		actualScreen.set_pos(Vector2(-1080, actualScreen.get_pos().y))
 		actualScreen = nextScreen
 		nextScreen = -1
 	

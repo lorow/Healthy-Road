@@ -76,7 +76,7 @@ textures/normal = ExtResource( 4 )
 params/resize_mode = 0
 params/stretch_mode = 0
 script/script = ExtResource( 5 )
-screenName = "test"
+screenIndexToShow = 0
 
 [node name="TextureButton1" type="TextureButton" parent="menu/VBoxContainer"]
 
@@ -95,7 +95,7 @@ textures/normal = ExtResource( 4 )
 params/resize_mode = 0
 params/stretch_mode = 0
 script/script = ExtResource( 5 )
-screenName = "test"
+screenIndexToShow = 0
 
 [node name="TextureButton2" type="TextureButton" parent="menu/VBoxContainer"]
 
@@ -114,7 +114,7 @@ textures/normal = ExtResource( 4 )
 params/resize_mode = 0
 params/stretch_mode = 0
 script/script = ExtResource( 5 )
-screenName = "test"
+screenIndexToShow = 0
 
 [node name="TextureButton3" type="TextureButton" parent="menu/VBoxContainer"]
 
@@ -133,7 +133,7 @@ textures/normal = ExtResource( 4 )
 params/resize_mode = 0
 params/stretch_mode = 0
 script/script = ExtResource( 5 )
-screenName = "test"
+screenIndexToShow = 0
 
 [node name="TextureButton4" type="TextureButton" parent="menu/VBoxContainer"]
 
@@ -152,7 +152,7 @@ textures/normal = ExtResource( 4 )
 params/resize_mode = 0
 params/stretch_mode = 0
 script/script = ExtResource( 5 )
-screenName = "test"
+screenIndexToShow = 0
 
 [node name="TouchDetecor" type="Control" parent="."]
 
@@ -178,7 +178,7 @@ margin/top = 0.0
 margin/right = 90.0
 margin/bottom = 1750.0
 texture = ExtResource( 2 )
-modulate = Color( 0.867188, 0.0304871, 0.0304871, 1 )
+modulate = Color( 1, 1, 1, 0 )
 expand = true
 stretch_mode = 0
 
