@@ -1,12 +1,20 @@
-[gd_scene load_steps=8 format=1]
+[gd_scene load_steps=10 format=1]
 
 [ext_resource path="res://sprites/homescreen/rec_for_today.tex" type="Texture" id=1]
-[ext_resource path="res://sprites/homescreen/truskawka.tex" type="Texture" id=2]
-[ext_resource path="res://sprites/homescreen/brokula.tex" type="Texture" id=3]
-[ext_resource path="res://sprites/homescreen/kukurydza.tex" type="Texture" id=4]
-[ext_resource path="res://sprites/homescreen/banan.tex" type="Texture" id=5]
-[ext_resource path="res://sprites/homescreen/pomidor.tex" type="Texture" id=6]
-[ext_resource path="res://sprites/homescreen/wisnie.tex" type="Texture" id=7]
+[ext_resource path="res://fonts/SourceSansPro-SemiBold.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://sprites/homescreen/truskawka.tex" type="Texture" id=3]
+[ext_resource path="res://sprites/homescreen/brokula.tex" type="Texture" id=4]
+[ext_resource path="res://sprites/homescreen/kukurydza.tex" type="Texture" id=5]
+[ext_resource path="res://sprites/homescreen/banan.tex" type="Texture" id=6]
+[ext_resource path="res://sprites/homescreen/pomidor.tex" type="Texture" id=7]
+[ext_resource path="res://sprites/homescreen/wisnie.tex" type="Texture" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+
+font/size = 80
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 2 )
 
 [node name="Node" type="Control"]
 
@@ -36,8 +44,41 @@ textures/normal = ExtResource( 1 )
 params/resize_mode = 0
 params/stretch_mode = 0
 
+[node name="Text" type="Control" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 287.0
+margin/top = 193.0
+margin/right = 327.0
+margin/bottom = 233.0
+
+[node name="Recipe for today" type="Label" parent="Text"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -239.0
+margin/top = 325.0
+margin/right = 745.0
+margin/bottom = 472.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_as_outline = 1
+text = "Recipe for today!"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
 [node name="Ikonki" type="Control" parent="."]
 
+editor/display_folded = true
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -53,11 +94,11 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 854.0
-margin/top = 433.0
-margin/right = 1019.0
-margin/bottom = 625.0
-texture = ExtResource( 2 )
+margin/left = 889.0
+margin/top = 335.0
+margin/right = 1054.0
+margin/bottom = 527.0
+texture = ExtResource( 3 )
 stretch_mode = 0
 
 [node name="Brokula" type="TextureFrame" parent="Ikonki"]
@@ -71,7 +112,7 @@ margin/left = -1.0
 margin/top = 113.0
 margin/right = 230.0
 margin/bottom = 379.0
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 stretch_mode = 0
 
 [node name="Kukurydza" type="TextureFrame" parent="Ikonki"]
@@ -86,7 +127,7 @@ margin/left = 901.0
 margin/top = 89.0
 margin/right = 1092.0
 margin/bottom = 419.0
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 stretch_mode = 0
 
 [node name="Banana" type="TextureFrame" parent="Ikonki"]
@@ -101,7 +142,7 @@ margin/left = 287.0
 margin/top = 193.0
 margin/right = 457.0
 margin/bottom = 579.0
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 stretch_mode = 0
 
 [node name="Pomidor" type="TextureFrame" parent="Ikonki"]
@@ -111,11 +152,11 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 33.0
-margin/top = 396.0
-margin/right = 262.0
-margin/bottom = 686.0
-texture = ExtResource( 6 )
+margin/left = 10.0
+margin/top = 299.0
+margin/right = 239.0
+margin/bottom = 589.0
+texture = ExtResource( 7 )
 stretch_mode = 0
 
 [node name="Wisnia" type="TextureFrame" parent="Ikonki"]
@@ -129,7 +170,7 @@ margin/left = 589.0
 margin/top = 256.0
 margin/right = 799.0
 margin/bottom = 538.0
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 stretch_mode = 0
 
 
