@@ -15,7 +15,9 @@ func _on_moveScreen(actPosX): actualScreen.set_pos(Vector2(actPosX, actualScreen
 func _on_change_actual_screen(index):
 	nextScreen = screens[index]
 	moveScreens()
-func _on_maxPos(): menuOnMaxPos = true
+func _on_maxPos(state):
+	print(state) 
+	menuOnMaxPos = state
 
 func moveScreens():
 	tween.interpolate_property(actualScreen, "rect/pos", actualScreen.get_pos(), Vector2(1080,actualScreen.get_pos().y),0.1, Tween.TRANS_LINEAR, Tween.EASE_OUT)

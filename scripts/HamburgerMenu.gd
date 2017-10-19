@@ -39,7 +39,8 @@ func _input(ev):
 					moved = true
 					set_pos(nextPos)
 					emit_move_signal()
-					if get_pos().x >= menuSize: emit_signal("maxPos")
+					if nextPos.x > -300:emit_signal("maxPos", true)
+					else:emit_signal("maxPos", false)
 
 func emit_move_signal(object = null, key = null, elapsed = null, value = null):
 	emit_signal("moveScreen", get_pos().x + get_size().x - 90)

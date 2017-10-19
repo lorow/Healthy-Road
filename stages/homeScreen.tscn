@@ -1,23 +1,22 @@
-[gd_scene load_steps=13 format=1]
+[gd_scene load_steps=12 format=1]
 
 [ext_resource path="res://scripts/buttonHandler.gd" type="Script" id=1]
-[ext_resource path="res://sprites/Background.tex" type="Texture" id=2]
-[ext_resource path="res://sprites/homescreen/rec_for_today.tex" type="Texture" id=3]
-[ext_resource path="res://scripts/switchScreen.gd" type="Script" id=4]
-[ext_resource path="res://fonts/SourceSansPro-SemiBold.ttf" type="DynamicFontData" id=5]
-[ext_resource path="res://sprites/homescreen/truskawka.tex" type="Texture" id=6]
-[ext_resource path="res://sprites/homescreen/brokula.tex" type="Texture" id=7]
-[ext_resource path="res://sprites/homescreen/kukurydza.tex" type="Texture" id=8]
-[ext_resource path="res://sprites/homescreen/banan.tex" type="Texture" id=9]
-[ext_resource path="res://sprites/homescreen/pomidor.tex" type="Texture" id=10]
-[ext_resource path="res://sprites/homescreen/wisnie.tex" type="Texture" id=11]
+[ext_resource path="res://sprites/homescreen/rec_for_today.tex" type="Texture" id=2]
+[ext_resource path="res://scripts/switchScreen.gd" type="Script" id=3]
+[ext_resource path="res://fonts/SourceSansPro-SemiBold.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://sprites/homescreen/truskawka.tex" type="Texture" id=5]
+[ext_resource path="res://sprites/homescreen/brokula.tex" type="Texture" id=6]
+[ext_resource path="res://sprites/homescreen/kukurydza.tex" type="Texture" id=7]
+[ext_resource path="res://sprites/homescreen/banan.tex" type="Texture" id=8]
+[ext_resource path="res://sprites/homescreen/pomidor.tex" type="Texture" id=9]
+[ext_resource path="res://sprites/homescreen/wisnie.tex" type="Texture" id=10]
 
 [sub_resource type="DynamicFont" id=1]
 
 font/size = 80
 font/use_mipmaps = false
 font/use_filter = false
-font/font = ExtResource( 5 )
+font/font = ExtResource( 4 )
 
 [node name="Node" type="Control"]
 
@@ -31,20 +30,6 @@ margin/right = 1080.0
 margin/bottom = 1920.0
 script/script = ExtResource( 1 )
 buttonsContainerNode = "Buttons"
-
-[node name="Debug" type="TextureFrame" parent="."]
-
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 0.0
-margin/top = 0.0
-margin/right = 1080.0
-margin/bottom = 1750.0
-texture = ExtResource( 2 )
-expand = true
-stretch_mode = 0
 
 [node name="Buttons" type="Control" parent="."]
 
@@ -73,10 +58,10 @@ margin/bottom = 653.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 3 )
+textures/normal = ExtResource( 2 )
 params/resize_mode = 1
 params/stretch_mode = 0
-script/script = ExtResource( 4 )
+script/script = ExtResource( 3 )
 screenIndexToShow = 1
 
 [node name="Text" type="Control" parent="Buttons/RecipeForTodayButton"]
@@ -132,7 +117,7 @@ margin/left = 889.0
 margin/top = 335.0
 margin/right = 1054.0
 margin/bottom = 527.0
-texture = ExtResource( 6 )
+texture = ExtResource( 5 )
 stretch_mode = 0
 
 [node name="Brokula" type="TextureFrame" parent="Buttons/RecipeForTodayButton/Ikonki"]
@@ -146,7 +131,7 @@ margin/left = -1.0
 margin/top = 113.0
 margin/right = 230.0
 margin/bottom = 379.0
-texture = ExtResource( 7 )
+texture = ExtResource( 6 )
 stretch_mode = 0
 
 [node name="Kukurydza" type="TextureFrame" parent="Buttons/RecipeForTodayButton/Ikonki"]
@@ -161,7 +146,7 @@ margin/left = 901.0
 margin/top = 89.0
 margin/right = 1092.0
 margin/bottom = 419.0
-texture = ExtResource( 8 )
+texture = ExtResource( 7 )
 stretch_mode = 0
 
 [node name="Banana" type="TextureFrame" parent="Buttons/RecipeForTodayButton/Ikonki"]
@@ -176,7 +161,7 @@ margin/left = 287.0
 margin/top = 193.0
 margin/right = 457.0
 margin/bottom = 579.0
-texture = ExtResource( 9 )
+texture = ExtResource( 8 )
 stretch_mode = 0
 
 [node name="Pomidor" type="TextureFrame" parent="Buttons/RecipeForTodayButton/Ikonki"]
@@ -190,7 +175,7 @@ margin/left = 10.0
 margin/top = 299.0
 margin/right = 239.0
 margin/bottom = 589.0
-texture = ExtResource( 10 )
+texture = ExtResource( 9 )
 stretch_mode = 0
 
 [node name="Wisnia" type="TextureFrame" parent="Buttons/RecipeForTodayButton/Ikonki"]
@@ -204,7 +189,7 @@ margin/left = 589.0
 margin/top = 256.0
 margin/right = 799.0
 margin/bottom = 538.0
-texture = ExtResource( 11 )
+texture = ExtResource( 10 )
 stretch_mode = 0
 
 [node name="RecipeForTodayButton1" type="TextureButton" parent="Buttons"]
@@ -220,10 +205,10 @@ margin/bottom = 1213.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 3 )
+textures/normal = ExtResource( 2 )
 params/resize_mode = 1
 params/stretch_mode = 0
-script/script = ExtResource( 4 )
+script/script = ExtResource( 3 )
 screenIndexToShow = 1
 
 [node name="RecipeForTodayButton3" type="TextureButton" parent="Buttons"]
@@ -239,10 +224,10 @@ margin/bottom = 1640.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 3 )
+textures/normal = ExtResource( 2 )
 params/resize_mode = 1
 params/stretch_mode = 0
-script/script = ExtResource( 4 )
+script/script = ExtResource( 3 )
 screenIndexToShow = 1
 
 [node name="RecipeForTodayButton4" type="TextureButton" parent="Buttons"]
@@ -258,10 +243,10 @@ margin/bottom = 1640.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 3 )
+textures/normal = ExtResource( 2 )
 params/resize_mode = 1
 params/stretch_mode = 0
-script/script = ExtResource( 4 )
+script/script = ExtResource( 3 )
 screenIndexToShow = 1
 
 [node name="RecipeForTodayButton2" type="TextureButton" parent="Buttons"]
@@ -277,10 +262,10 @@ margin/bottom = 1213.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 3 )
+textures/normal = ExtResource( 2 )
 params/resize_mode = 1
 params/stretch_mode = 0
-script/script = ExtResource( 4 )
+script/script = ExtResource( 3 )
 screenIndexToShow = 1
 
 
