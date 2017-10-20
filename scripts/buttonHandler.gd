@@ -2,7 +2,7 @@ extends Control
 
 var buttons
 export var buttonsContainerNode = "VBoxContainer"
-onready var path_to_pressed_texture = load("res://sprites/homescreen/pomidor.tex")
+onready var path_to_pressed_texture = load("res://sprites/button-menu-pressed.tex")
 signal changeScreenTo
 
 func _ready():

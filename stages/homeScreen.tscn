@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=1]
+[gd_scene load_steps=15 format=1]
 
 [ext_resource path="res://scripts/buttonHandler.gd" type="Script" id=1]
 [ext_resource path="res://sprites/homescreen/rec_for_today.tex" type="Texture" id=2]
@@ -10,10 +10,27 @@
 [ext_resource path="res://sprites/homescreen/banan.tex" type="Texture" id=8]
 [ext_resource path="res://sprites/homescreen/pomidor.tex" type="Texture" id=9]
 [ext_resource path="res://sprites/homescreen/wisnie.tex" type="Texture" id=10]
+[ext_resource path="res://sprites/button-menu.tex" type="Texture" id=11]
 
 [sub_resource type="DynamicFont" id=1]
 
 font/size = 80
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+
+font/size = 66
+extra_spacing/char = -2
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=3]
+
+font/size = 38
+extra_spacing/char = -2
 font/use_mipmaps = false
 font/use_filter = false
 font/font = ExtResource( 4 )
@@ -98,6 +115,7 @@ max_lines_visible = -1
 
 [node name="Ikonki" type="Control" parent="Buttons/RecipeForTodayButton"]
 
+editor/display_folded = true
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -192,45 +210,7 @@ margin/bottom = 538.0
 texture = ExtResource( 10 )
 stretch_mode = 0
 
-[node name="RecipeForTodayButton1" type="TextureButton" parent="Buttons"]
-
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 30.0
-margin/top = 820.0
-margin/right = 580.0
-margin/bottom = 1213.0
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-textures/normal = ExtResource( 2 )
-params/resize_mode = 1
-params/stretch_mode = 0
-script/script = ExtResource( 3 )
-screenIndexToShow = 1
-
-[node name="RecipeForTodayButton3" type="TextureButton" parent="Buttons"]
-
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 10.0
-margin/top = 1260.0
-margin/right = 700.0
-margin/bottom = 1640.0
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-textures/normal = ExtResource( 2 )
-params/resize_mode = 1
-params/stretch_mode = 0
-script/script = ExtResource( 3 )
-screenIndexToShow = 1
-
-[node name="RecipeForTodayButton4" type="TextureButton" parent="Buttons"]
+[node name="Box3" type="TextureButton" parent="Buttons"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -243,13 +223,14 @@ margin/bottom = 1640.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 2 )
+textures/normal = ExtResource( 11 )
 params/resize_mode = 1
 params/stretch_mode = 0
+params/modulate = Color( 0.905882, 0.494118, 0.137255, 1 )
 script/script = ExtResource( 3 )
 screenIndexToShow = 1
 
-[node name="RecipeForTodayButton2" type="TextureButton" parent="Buttons"]
+[node name="Box4" type="TextureButton" parent="Buttons"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -262,10 +243,97 @@ margin/bottom = 1213.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 2 )
+textures/normal = ExtResource( 11 )
 params/resize_mode = 1
 params/stretch_mode = 0
+params/modulate = Color( 0.611765, 0.34902, 0.721569, 1 )
 script/script = ExtResource( 3 )
 screenIndexToShow = 1
+
+[node name="Box2" type="TextureButton" parent="Buttons"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 10.0
+margin/top = 1260.0
+margin/right = 700.0
+margin/bottom = 1640.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 11 )
+params/resize_mode = 1
+params/stretch_mode = 0
+params/modulate = Color( 0.343384, 0.757813, 0.28418, 1 )
+script/script = ExtResource( 3 )
+screenIndexToShow = 1
+
+[node name="Box1" type="TextureButton" parent="Buttons"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 30.0
+margin/top = 820.0
+margin/right = 580.0
+margin/bottom = 1213.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 11 )
+params/resize_mode = 1
+params/stretch_mode = 0
+params/modulate = Color( 0.223529, 0.494118, 0.682353, 1 )
+script/script = ExtResource( 3 )
+screenIndexToShow = 1
+
+[node name="Icon" type="TextureFrame" parent="Buttons/Box1"]
+
+rect/rotation = -15.0
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 414.0
+margin/top = -129.0
+margin/right = 634.0
+margin/bottom = 153.0
+texture = ExtResource( 10 )
+stretch_mode = 0
+
+[node name="Name" type="Label" parent="Buttons/Box1"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 21.0
+margin/top = 250.0
+margin/right = 455.0
+margin/bottom = 334.0
+custom_fonts/font = SubResource( 2 )
+text = "Mom's Spaghetti"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Description" type="Label" parent="Buttons/Box1"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 34.0
+margin/top = 322.0
+margin/right = 557.0
+margin/bottom = 376.0
+custom_fonts/font = SubResource( 3 )
+text = "Exactly this one you like so much"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
 
 
