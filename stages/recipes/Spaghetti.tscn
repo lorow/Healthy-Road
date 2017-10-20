@@ -1,0 +1,484 @@
+[gd_scene load_steps=11 format=1]
+
+[ext_resource path="res://scripts/buttonHandler.gd" type="Script" id=1]
+[ext_resource path="res://stages/recipes/spaghetti.tex" type="Texture" id=2]
+[ext_resource path="res://fonts/SourceSansPro-SemiBold.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://stages/recipes/reciepe-square.tex" type="Texture" id=4]
+[ext_resource path="res://stages/recipes/heart.tex" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+
+font/size = 75
+extra_spacing/char = -1
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+
+font/size = 75
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+
+font/size = 37
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+
+font/size = 38
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=5]
+
+font/size = 60
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 3 )
+
+[node name="Spaghetti-Recipe" type="Control"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 170.0
+margin/right = 1080.0
+margin/bottom = 1920.0
+script/script = ExtResource( 1 )
+buttonsContainerNode = "Buttons"
+
+[node name="Recipe-Picture" type="TextureFrame" parent="."]
+
+editor/display_folded = true
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 39.0
+margin/top = 110.0
+margin/right = 1041.0
+margin/bottom = 613.0
+texture = ExtResource( 2 )
+stretch_mode = 0
+
+[node name="Spaghetti Alla Bolognese" type="Label" parent="Recipe-Picture"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 9.0
+margin/top = 345.0
+margin/right = 1003.0
+margin/bottom = 502.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_as_outline = 1
+text = "Spaghetti Alla Bolognese"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Texts" type="Control" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 110.0
+margin/right = 40.0
+margin/bottom = 150.0
+
+[node name="Description" type="Label" parent="Texts"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 45.0
+margin/top = 575.0
+margin/right = 417.0
+margin/bottom = 670.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
+text = "Description"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="ColorFrame" type="ColorFrame" parent="Texts/Description"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 6.0
+margin/top = 99.0
+margin/right = 996.0
+margin/bottom = 104.0
+color = Color( 0.501961, 0.545098, 0.552941, 1 )
+
+[node name="description" type="Label" parent="Texts/Description"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 3.0
+margin/top = 122.0
+margin/right = 1004.0
+margin/bottom = 419.0
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
+text = "Spaghetti ala bolognese ma to do siebie, ze ma w sobie miesco, makaron i randomowe przyprawy. Brzmi smacznie, nie? I tak nie przygotujesz"
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="calories" type="Label" parent="Texts"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 45.0
+margin/top = 876.0
+margin/right = 417.0
+margin/bottom = 971.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
+text = "Calories in 100g"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="ColorFrame" type="ColorFrame" parent="Texts/calories"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 6.0
+margin/top = 99.0
+margin/right = 996.0
+margin/bottom = 104.0
+color = Color( 0.501961, 0.545098, 0.552941, 1 )
+
+[node name="kcal" type="TextureFrame" parent="Texts/calories"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 170.0
+margin/right = 464.0
+margin/bottom = 339.0
+texture = ExtResource( 4 )
+modulate = Color( 0.105882, 0.737255, 0.615686, 1 )
+stretch_mode = 0
+
+[node name="kcal" type="Label" parent="Texts/calories/kcal"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 464.0
+margin/bottom = 49.0
+custom_fonts/font = SubResource( 4 )
+text = "kcal"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="amount" type="Label" parent="Texts/calories/kcal/kcal"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 48.0
+margin/right = 463.0
+margin/bottom = 170.0
+custom_fonts/font = SubResource( 5 )
+text = "W chuj"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="fat" type="TextureFrame" parent="Texts/calories"]
+
+editor/display_folded = true
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 530.0
+margin/top = 170.0
+margin/right = 994.0
+margin/bottom = 339.0
+texture = ExtResource( 4 )
+modulate = Color( 0.207843, 0.596078, 0.862745, 1 )
+stretch_mode = 0
+
+[node name="fat" type="Label" parent="Texts/calories/fat"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 464.0
+margin/bottom = 49.0
+custom_fonts/font = SubResource( 4 )
+text = "fat"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="amount" type="Label" parent="Texts/calories/fat/fat"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 48.0
+margin/right = 463.0
+margin/bottom = 170.0
+custom_fonts/font = SubResource( 5 )
+text = "W chuj"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="protein" type="TextureFrame" parent="Texts/calories"]
+
+editor/display_folded = true
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 390.0
+margin/right = 464.0
+margin/bottom = 559.0
+texture = ExtResource( 4 )
+modulate = Color( 0.611765, 0.34902, 0.721569, 1 )
+stretch_mode = 0
+
+[node name="kcal" type="Label" parent="Texts/calories/protein"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 464.0
+margin/bottom = 49.0
+custom_fonts/font = SubResource( 4 )
+text = "protein"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="amount" type="Label" parent="Texts/calories/protein/kcal"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 48.0
+margin/right = 463.0
+margin/bottom = 170.0
+custom_fonts/font = SubResource( 5 )
+text = "W chuj"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="sugars" type="TextureFrame" parent="Texts/calories"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 530.0
+margin/top = 390.0
+margin/right = 994.0
+margin/bottom = 559.0
+texture = ExtResource( 4 )
+modulate = Color( 0.905882, 0.494118, 0.137255, 1 )
+stretch_mode = 0
+
+[node name="sugars" type="Label" parent="Texts/calories/sugars"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 464.0
+margin/bottom = 49.0
+custom_fonts/font = SubResource( 4 )
+text = "sugars"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="amount" type="Label" parent="Texts/calories/sugars/sugars"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 48.0
+margin/right = 463.0
+margin/bottom = 170.0
+custom_fonts/font = SubResource( 5 )
+text = "W chuj"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="How to prepare" type="Label" parent="Texts"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 45.0
+margin/top = 1495.0
+margin/right = 417.0
+margin/bottom = 1590.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
+text = "How to prepare"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="ColorFrame" type="ColorFrame" parent="Texts/How to prepare"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 6.0
+margin/top = 99.0
+margin/right = 996.0
+margin/bottom = 104.0
+color = Color( 0.501961, 0.545098, 0.552941, 1 )
+
+[node name="Krok nr 1" type="ColorFrame" parent="Texts/How to prepare"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -8.0
+margin/top = 173.0
+margin/right = 219.0
+margin/bottom = 401.0
+color = Color( 1, 1, 1, 1 )
+
+[node name="Krok 1" type="Label" parent="Texts/How to prepare/Krok nr 1"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 246.0
+margin/top = 3.0
+margin/right = 1012.0
+margin/bottom = 228.0
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
+text = "Krok 1 Nic nie rób, więc nie musisz przechodzić do następnego kroku"
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Krok nr2" type="ColorFrame" parent="Texts/How to prepare"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -8.0
+margin/top = 443.0
+margin/right = 219.0
+margin/bottom = 671.0
+color = Color( 1, 1, 1, 1 )
+
+[node name="Krok 2" type="Label" parent="Texts/How to prepare/Krok nr2"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 246.0
+margin/top = 3.0
+margin/right = 1012.0
+margin/bottom = 228.0
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
+text = "Krok 2 Miałeś mały gnojku nic nie robić. Nie widze sensu sie w ten sposób bawić, skoro w ogóle sie mnie nie słuchasz... gówno będzie a nie spaghetti alla bolognese."
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Heart <3" type="TextureFrame" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 925.0
+margin/top = 613.0
+margin/right = 1039.0
+margin/bottom = 784.0
+texture = ExtResource( 5 )
+stretch_mode = 4
+
+

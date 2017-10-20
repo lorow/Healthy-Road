@@ -83,6 +83,7 @@ screenIndexToShow = 1
 
 [node name="Text" type="Control" parent="Buttons/RecipeForTodayButton"]
 
+editor/display_folded = true
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -288,7 +289,7 @@ params/resize_mode = 1
 params/stretch_mode = 0
 params/modulate = Color( 0.223529, 0.494118, 0.682353, 1 )
 script/script = ExtResource( 3 )
-screenIndexToShow = 1
+screenIndexToShow = 2
 
 [node name="Icon" type="TextureFrame" parent="Buttons/Box1"]
 
