@@ -58,13 +58,11 @@ margin/right = -1040.0
 
 margin/left = -1080.0
 margin/right = 0.0
-script/script = null
 
 [node name="Baguette-Recipe" parent="UI/Screens" instance=ExtResource( 6 )]
 
 margin/left = -1080.0
 margin/right = 0.0
-script/script = null
 
 [node name="HamburgerMenu" parent="UI" instance=ExtResource( 7 )]
 

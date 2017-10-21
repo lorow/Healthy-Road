@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=1]
 
-[ext_resource path="res://scripts/buttonHandler.gd" type="Script" id=1]
+[ext_resource path="res://scripts/scroll.gd" type="Script" id=1]
 [ext_resource path="res://sprites/recipes/spaghetti/spaghetti.tex" type="Texture" id=2]
 [ext_resource path="res://fonts/SourceSansPro-SemiBold.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://sprites/recipes/spaghetti/reciepe-square.tex" type="Texture" id=4]
@@ -51,24 +51,39 @@ size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 170.0
 margin/right = 1080.0
-margin/bottom = 2461.0
+margin/bottom = 1920.0
 script/script = ExtResource( 1 )
-buttonsContainerNode = "Buttons"
 
-[node name="Recipe-Picture" type="TextureFrame" parent="."]
+[node name="contentNode" type="Control" parent="."]
 
+editor/display_folded = true
+visibility/behind_parent = true
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = -550.0
+
+[node name="Recipe-Picture" type="TextureFrame" parent="contentNode"]
+
+editor/display_folded = true
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 39.0
+margin/left = 29.0
 margin/top = 110.0
-margin/right = 1041.0
+margin/right = 1031.0
 margin/bottom = 613.0
 texture = ExtResource( 2 )
 stretch_mode = 0
 
-[node name="Spaghetti Alla Bolognese" type="Label" parent="Recipe-Picture"]
+[node name="Spaghetti Alla Bolognese" type="Label" parent="contentNode/Recipe-Picture"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -89,18 +104,19 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Texts" type="Control" parent="."]
+[node name="Texts" type="Control" parent="contentNode"]
 
+editor/display_folded = true
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 0.0
+margin/left = -10.0
 margin/top = 110.0
-margin/right = 0.0
+margin/right = -10.0
 margin/bottom = 110.0
 
-[node name="Description" type="Label" parent="Texts"]
+[node name="Description" type="Label" parent="contentNode/Texts"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -108,8 +124,8 @@ size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 45.0
 margin/top = 575.0
-margin/right = 1043.0
-margin/bottom = 865.0
+margin/right = 417.0
+margin/bottom = 670.0
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
 text = "Description"
@@ -117,7 +133,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="ColorFrame" type="ColorFrame" parent="Texts/Description"]
+[node name="ColorFrame" type="ColorFrame" parent="contentNode/Texts/Description"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -129,7 +145,7 @@ margin/right = 996.0
 margin/bottom = 104.0
 color = Color( 0.501961, 0.545098, 0.552941, 1 )
 
-[node name="description" type="Label" parent="Texts/Description"]
+[node name="description" type="Label" parent="contentNode/Texts/Description"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -138,7 +154,7 @@ size_flags/vertical = 0
 margin/left = 3.0
 margin/top = 122.0
 margin/right = 1004.0
-margin/bottom = 280.0
+margin/bottom = 419.0
 custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
 text = "Spaghetti ala bolognese ma to do siebie, ze ma w sobie miesco, makaron i randomowe przyprawy. Brzmi smacznie, nie? I tak nie przygotujesz"
@@ -147,7 +163,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="calories" type="Label" parent="Texts"]
+[node name="calories" type="Label" parent="contentNode/Texts"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -155,8 +171,8 @@ size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 45.0
 margin/top = 876.0
-margin/right = 1044.0
-margin/bottom = 1439.0
+margin/right = 417.0
+margin/bottom = 971.0
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
 text = "Calories in 100g"
@@ -164,7 +180,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="ColorFrame" type="ColorFrame" parent="Texts/calories"]
+[node name="ColorFrame" type="ColorFrame" parent="contentNode/Texts/calories"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -176,7 +192,7 @@ margin/right = 996.0
 margin/bottom = 104.0
 color = Color( 0.501961, 0.545098, 0.552941, 1 )
 
-[node name="kcal" type="TextureFrame" parent="Texts/calories"]
+[node name="kcal" type="TextureFrame" parent="contentNode/Texts/calories"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -190,7 +206,7 @@ texture = ExtResource( 4 )
 modulate = Color( 0.105882, 0.737255, 0.615686, 1 )
 stretch_mode = 0
 
-[node name="kcal" type="Label" parent="Texts/calories/kcal"]
+[node name="kcal" type="Label" parent="contentNode/Texts/calories/kcal"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -208,7 +224,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="amount" type="Label" parent="Texts/calories/kcal/kcal"]
+[node name="amount" type="Label" parent="contentNode/Texts/calories/kcal/kcal"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -226,7 +242,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="fat" type="TextureFrame" parent="Texts/calories"]
+[node name="fat" type="TextureFrame" parent="contentNode/Texts/calories"]
 
 editor/display_folded = true
 focus/ignore_mouse = true
@@ -241,7 +257,7 @@ texture = ExtResource( 4 )
 modulate = Color( 0.207843, 0.596078, 0.862745, 1 )
 stretch_mode = 0
 
-[node name="fat" type="Label" parent="Texts/calories/fat"]
+[node name="fat" type="Label" parent="contentNode/Texts/calories/fat"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -259,7 +275,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="amount" type="Label" parent="Texts/calories/fat/fat"]
+[node name="amount" type="Label" parent="contentNode/Texts/calories/fat/fat"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -277,7 +293,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="protein" type="TextureFrame" parent="Texts/calories"]
+[node name="protein" type="TextureFrame" parent="contentNode/Texts/calories"]
 
 editor/display_folded = true
 focus/ignore_mouse = true
@@ -292,7 +308,7 @@ texture = ExtResource( 4 )
 modulate = Color( 0.611765, 0.34902, 0.721569, 1 )
 stretch_mode = 0
 
-[node name="kcal" type="Label" parent="Texts/calories/protein"]
+[node name="kcal" type="Label" parent="contentNode/Texts/calories/protein"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -310,7 +326,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="amount" type="Label" parent="Texts/calories/protein/kcal"]
+[node name="amount" type="Label" parent="contentNode/Texts/calories/protein/kcal"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -328,7 +344,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="sugars" type="TextureFrame" parent="Texts/calories"]
+[node name="sugars" type="TextureFrame" parent="contentNode/Texts/calories"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -342,7 +358,7 @@ texture = ExtResource( 4 )
 modulate = Color( 0.905882, 0.494118, 0.137255, 1 )
 stretch_mode = 0
 
-[node name="sugars" type="Label" parent="Texts/calories/sugars"]
+[node name="sugars" type="Label" parent="contentNode/Texts/calories/sugars"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -360,7 +376,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="amount" type="Label" parent="Texts/calories/sugars/sugars"]
+[node name="amount" type="Label" parent="contentNode/Texts/calories/sugars/sugars"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -378,7 +394,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="How to prepare" type="Label" parent="Texts"]
+[node name="How to prepare" type="Label" parent="contentNode/Texts"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -386,8 +402,8 @@ size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 45.0
 margin/top = 1495.0
-margin/right = 1045.0
-margin/bottom = 2168.0
+margin/right = 417.0
+margin/bottom = 1590.0
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
 text = "How to prepare"
@@ -395,7 +411,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="ColorFrame" type="ColorFrame" parent="Texts/How to prepare"]
+[node name="ColorFrame" type="ColorFrame" parent="contentNode/Texts/How to prepare"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -407,7 +423,7 @@ margin/right = 996.0
 margin/bottom = 104.0
 color = Color( 0.501961, 0.545098, 0.552941, 1 )
 
-[node name="Krok nr 1" type="ColorFrame" parent="Texts/How to prepare"]
+[node name="Krok nr 1" type="ColorFrame" parent="contentNode/Texts/How to prepare"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -419,7 +435,7 @@ margin/right = 219.0
 margin/bottom = 401.0
 color = Color( 1, 1, 1, 1 )
 
-[node name="Krok 1" type="Label" parent="Texts/How to prepare/Krok nr 1"]
+[node name="Krok 1" type="Label" parent="contentNode/Texts/How to prepare/Krok nr 1"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -437,7 +453,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Krok nr2" type="ColorFrame" parent="Texts/How to prepare"]
+[node name="Krok nr2" type="ColorFrame" parent="contentNode/Texts/How to prepare"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -449,7 +465,7 @@ margin/right = 219.0
 margin/bottom = 671.0
 color = Color( 1, 1, 1, 1 )
 
-[node name="Krok 2" type="Label" parent="Texts/How to prepare/Krok nr2"]
+[node name="Krok 2" type="Label" parent="contentNode/Texts/How to prepare/Krok nr2"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -467,16 +483,16 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Heart <3" type="TextureFrame" parent="."]
+[node name="Heart <3" type="TextureFrame" parent="contentNode"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 925.0
-margin/top = 613.0
-margin/right = 1039.0
-margin/bottom = 783.0
+margin/left = 860.0
+margin/top = 650.0
+margin/right = 974.0
+margin/bottom = 759.0
 texture = ExtResource( 5 )
 stretch_mode = 4
 
