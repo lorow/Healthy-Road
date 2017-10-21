@@ -345,7 +345,7 @@ params/resize_mode = 1
 params/stretch_mode = 0
 params/modulate = Color( 0.341176, 0.756863, 0.282353, 1 )
 script/script = ExtResource( 3 )
-screenIndexToShow = 2
+screenIndexToShow = 3
 
 [node name="Icon" type="TextureFrame" parent="Buttons/Box2"]
 
