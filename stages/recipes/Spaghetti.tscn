@@ -1,10 +1,10 @@
 [gd_scene load_steps=11 format=1]
 
 [ext_resource path="res://scripts/buttonHandler.gd" type="Script" id=1]
-[ext_resource path="res://stages/recipes/spaghetti.tex" type="Texture" id=2]
+[ext_resource path="res://sprites/recipes/spaghetti/spaghetti.tex" type="Texture" id=2]
 [ext_resource path="res://fonts/SourceSansPro-SemiBold.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://stages/recipes/reciepe-square.tex" type="Texture" id=4]
-[ext_resource path="res://stages/recipes/heart.tex" type="Texture" id=5]
+[ext_resource path="res://sprites/recipes/spaghetti/reciepe-square.tex" type="Texture" id=4]
+[ext_resource path="res://sprites/recipes/spaghetti/heart.tex" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -51,13 +51,12 @@ size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 170.0
 margin/right = 1080.0
-margin/bottom = 1920.0
+margin/bottom = 2461.0
 script/script = ExtResource( 1 )
 buttonsContainerNode = "Buttons"
 
 [node name="Recipe-Picture" type="TextureFrame" parent="."]
 
-editor/display_folded = true
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -98,8 +97,8 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 110.0
-margin/right = 40.0
-margin/bottom = 150.0
+margin/right = 0.0
+margin/bottom = 110.0
 
 [node name="Description" type="Label" parent="Texts"]
 
@@ -109,8 +108,8 @@ size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 45.0
 margin/top = 575.0
-margin/right = 417.0
-margin/bottom = 670.0
+margin/right = 1043.0
+margin/bottom = 865.0
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
 text = "Description"
@@ -139,7 +138,7 @@ size_flags/vertical = 0
 margin/left = 3.0
 margin/top = 122.0
 margin/right = 1004.0
-margin/bottom = 419.0
+margin/bottom = 280.0
 custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
 text = "Spaghetti ala bolognese ma to do siebie, ze ma w sobie miesco, makaron i randomowe przyprawy. Brzmi smacznie, nie? I tak nie przygotujesz"
@@ -156,8 +155,8 @@ size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 45.0
 margin/top = 876.0
-margin/right = 417.0
-margin/bottom = 971.0
+margin/right = 1044.0
+margin/bottom = 1439.0
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
 text = "Calories in 100g"
@@ -387,8 +386,8 @@ size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 45.0
 margin/top = 1495.0
-margin/right = 417.0
-margin/bottom = 1590.0
+margin/right = 1045.0
+margin/bottom = 2168.0
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
 text = "How to prepare"
@@ -477,7 +476,7 @@ size_flags/vertical = 2
 margin/left = 925.0
 margin/top = 613.0
 margin/right = 1039.0
-margin/bottom = 784.0
+margin/bottom = 783.0
 texture = ExtResource( 5 )
 stretch_mode = 4
 

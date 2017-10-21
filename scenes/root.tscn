@@ -61,6 +61,7 @@ script/script = null
 
 [node name="HamburgerMenu" parent="UI" instance=ExtResource( 6 )]
 
+editor/display_folded = true
 margin/top = 170.0
 margin/right = -50.0
 margin/bottom = 1920.0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=1]
+[gd_scene load_steps=16 format=1]
 
 [ext_resource path="res://scripts/buttonHandler.gd" type="Script" id=1]
 [ext_resource path="res://sprites/homescreen/rec_for_today.tex" type="Texture" id=2]
@@ -29,8 +29,15 @@ font/font = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=3]
 
-font/size = 38
+font/size = 36
 extra_spacing/char = -2
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=4]
+
+font/size = 75
 font/use_mipmaps = false
 font/use_filter = false
 font/font = ExtResource( 4 )
@@ -327,12 +334,29 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-margin/left = 34.0
-margin/top = 322.0
-margin/right = 557.0
-margin/bottom = 376.0
+margin/left = 24.0
+margin/top = 323.0
+margin/right = 547.0
+margin/bottom = 377.0
 custom_fonts/font = SubResource( 3 )
 text = "Exactly this one you like so much"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Popular" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 30.0
+margin/top = 709.0
+margin/right = 286.0
+margin/bottom = 804.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.501961, 0.541176, 0.54902, 1 )
+text = "Popular"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
