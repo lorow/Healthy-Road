@@ -88,7 +88,7 @@ textures/normal = ExtResource( 2 )
 params/resize_mode = 1
 params/stretch_mode = 0
 script/script = ExtResource( 3 )
-screenIndexToShow = 1
+screenIndexToShow = 2
 
 [node name="Text" type="Control" parent="Buttons/RecipeForTodayButton"]
 
