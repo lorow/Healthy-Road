@@ -8,7 +8,7 @@ var offset
 
 onready var contentNode = get_node("contentNode")
 onready var maxContentPos = get_size().y - contentNode.get_size().y
-onready var minContentPos = 0
+export(int) var minContentPos = 0
 
 func _ready():
 	allowMove = checkIfBigger()
@@ -21,11 +21,14 @@ func _input(ev):
 			if ev.pressed:
 				offset = contentNode.get_pos().y - ev.pos.y
 				touched = true
-				
+			else:
+				touched = false
+
 		if ev.type==InputEvent.SCREEN_DRAG and touched:
-			var nextPos = Vector2(contentNode.get_pos().x, ev.pos.y + offset)
-			if nextPos.y <= minContentPos and nextPos.y >= maxContentPos:
-				contentNode.set_pos(nextPos)
+			if not offset == null:
+				var nextPos = Vector2(contentNode.get_pos().x, ev.pos.y + offset)
+				if nextPos.y <= minContentPos and nextPos.y >= maxContentPos:
+					contentNode.set_pos(nextPos)
 
 func checkIfBigger():
 	if get_size().y >= contentNode.get_size().y:
