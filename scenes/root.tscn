@@ -38,6 +38,7 @@ stretch_mode = 0
 
 [node name="Screens" type="Control" parent="UI"]
 
+editor/display_folded = true
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -67,14 +68,8 @@ margin/left = -1080.0
 margin/right = 0.0
 minContentPos = 0
 
-[node name="contentNode" parent="UI/Screens/Baguette-Recipe"]
-
-editor/display_folded = true
-margin/bottom = -550.0
-
 [node name="HamburgerMenu" parent="UI" instance=ExtResource( 7 )]
 
-editor/display_folded = true
 margin/top = 170.0
 margin/right = -50.0
 margin/bottom = 1920.0
@@ -85,6 +80,25 @@ screenIndexToShow = 1
 
 [node name="topBar" parent="UI" instance=ExtResource( 8 )]
 
+[node name="TextureFrame" parent="UI/topBar"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+
+[node name="Magnifying glass" parent="UI/topBar"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+
+[node name="Search Panel" parent="UI/topBar"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+
+[node name="Expand" parent="UI/topBar"]
+
+focus/ignore_mouse = false
+
 [node name="tween" type="Tween" parent="UI"]
 
 playback/process_mode = 1
@@ -93,5 +107,5 @@ playback/repeat = false
 playback/speed = 1.0
 
 
-[editable path="UI/Screens/Baguette-Recipe"]
 [editable path="UI/HamburgerMenu"]
+[editable path="UI/topBar"]

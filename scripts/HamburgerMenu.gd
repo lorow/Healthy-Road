@@ -11,8 +11,11 @@ signal moveScreen
 signal maxPos
 var changingScreen = false
 
+var stateChanged = false
+
 func _ready():
 	tween.connect("tween_step", self, "emit_move_signal")
+	get_node("../topBar/Expand").connect("OpenMenu", self, "changeMenuState")
 	set_process_input(true)
 
 func _input(ev):
@@ -21,7 +24,7 @@ func _input(ev):
 			if ev.pressed:
 				offset = get_pos().x - ev.pos.x
 				touched = true
-			if not ev.pressed :
+			if not ev.pressed:
 				touched = false
 				if moved:
 					if abs(menuSize - get_pos().x) < abs(0 - get_pos().x):
@@ -39,8 +42,21 @@ func _input(ev):
 					moved = true
 					set_pos(nextPos)
 					emit_move_signal()
-					if nextPos.x > -300:emit_signal("maxPos", true)
-					else:emit_signal("maxPos", false)
+					if nextPos.x > -300:
+						emit_signal("maxPos", true)
+						stateChanged = true
+					else:
+						stateChanged = false
+						emit_signal("maxPos", false)
+
+func changeMenuState():
+	if not stateChanged:
+		tween.interpolate_property(self, "rect/pos", get_pos(), Vector2(0, get_pos().y), 0.2, Tween.TRANS_LINEAR, Tween.EASE_OUT)
+		stateChanged = true
+	else:
+		tween.interpolate_property(self, "rect/pos", get_pos(), Vector2(menuSize, get_pos().y), 0.2, Tween.TRANS_LINEAR, Tween.EASE_OUT)
+		stateChanged = false
+	tween.start()
 
 func emit_move_signal(object = null, key = null, elapsed = null, value = null):
 	emit_signal("moveScreen", get_pos().x + get_size().x - 90)
