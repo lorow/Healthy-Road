@@ -61,8 +61,14 @@ margin/right = 0.0
 
 [node name="Baguette-Recipe" parent="UI/Screens" instance=ExtResource( 6 )]
 
+editor/display_folded = true
 margin/left = -1080.0
 margin/right = 0.0
+
+[node name="contentNode" parent="UI/Screens/Baguette-Recipe"]
+
+editor/display_folded = true
+margin/bottom = -550.0
 
 [node name="HamburgerMenu" parent="UI" instance=ExtResource( 7 )]
 
@@ -85,4 +91,5 @@ playback/repeat = false
 playback/speed = 1.0
 
 
+[editable path="UI/Screens/Baguette-Recipe"]
 [editable path="UI/HamburgerMenu"]

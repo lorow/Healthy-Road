@@ -17,9 +17,9 @@ func _ready():
 
 func _input(ev):
 	if is_visible() and ((ev.type==InputEvent.SCREEN_TOUCH) or (ev.type==InputEvent.SCREEN_DRAG)) and not changingScreen:
-		if ev.type==InputEvent.SCREEN_TOUCH:
-			if ev.pressed and touchUtils.checkIfInside(ev, get_pos(), get_size()):
-				offset = (get_size().x/2) - ev.pos.x
+		if ev.type==InputEvent.SCREEN_TOUCH and touchUtils.checkIfInside(ev, get_pos(), get_size()):
+			if ev.pressed:
+				offset = get_pos().x - ev.pos.x
 				touched = true
 			if not ev.pressed :
 				touched = false
@@ -34,7 +34,7 @@ func _input(ev):
 
 		if ev.type==InputEvent.SCREEN_DRAG and touched:
 			if not offset == null:
-				var nextPos = Vector2(ev.pos.x - (get_size().x - 90 /2),get_pos().y)
+				var nextPos = Vector2(ev.pos.x + offset,get_pos().y)
 				if nextPos.x <= 0 and nextPos.x >= menuSize:
 					moved = true
 					set_pos(nextPos)

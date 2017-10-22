@@ -16,7 +16,6 @@ func _on_change_actual_screen(index):
 	nextScreen = screens[index]
 	moveScreens()
 func _on_maxPos(state):
-	print(state) 
 	menuOnMaxPos = state
 
 func moveScreens():
