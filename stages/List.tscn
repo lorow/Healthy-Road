@@ -1,30 +1,31 @@
-[gd_scene load_steps=8 format=1]
+[gd_scene load_steps=9 format=1]
 
-[ext_resource path="res://sprites/list/list-block.tex" type="Texture" id=1]
-[ext_resource path="res://sprites/list/spaghetti-list.tex" type="Texture" id=2]
-[ext_resource path="res://fonts/SourceSansPro-SemiBold.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://sprites/list/baguette-list.tex" type="Texture" id=4]
+[ext_resource path="res://scripts/scroll.gd" type="Script" id=1]
+[ext_resource path="res://sprites/list/list-block.tex" type="Texture" id=2]
+[ext_resource path="res://sprites/list/spaghetti-list.tex" type="Texture" id=3]
+[ext_resource path="res://fonts/SourceSansPro-SemiBold.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://sprites/list/baguette-list.tex" type="Texture" id=5]
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=1]
 
 font/size = 60
 font/use_mipmaps = false
 font/use_filter = false
-font/font = ExtResource( 3 )
+font/font = ExtResource( 4 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=2]
 
 font/size = 80
 font/use_mipmaps = false
 font/use_filter = false
-font/font = ExtResource( 3 )
+font/font = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=3]
 
 font/size = 150
 font/use_mipmaps = false
 font/use_filter = false
-font/font = ExtResource( 3 )
+font/font = ExtResource( 4 )
 
 [node name="List" type="Control"]
 
@@ -36,9 +37,23 @@ margin/left = 0.0
 margin/top = 170.0
 margin/right = 1080.0
 margin/bottom = 1920.0
+script/script = ExtResource( 1 )
+minContentPos = 0
 
-[node name="Block1" type="TextureFrame" parent="."]
+[node name="contentNode" type="Control" parent="."]
 
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 1070.0
+margin/bottom = 2320.0
+
+[node name="Block1" type="TextureFrame" parent="contentNode"]
+
+editor/display_folded = true
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -47,10 +62,10 @@ margin/left = 70.0
 margin/top = 100.0
 margin/right = 1008.0
 margin/bottom = 345.0
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
 stretch_mode = 0
 
-[node name="Block1-Image" type="TextureButton" parent="Block1"]
+[node name="Block1-Image" type="TextureButton" parent="contentNode/Block1"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -63,11 +78,11 @@ margin/bottom = 40.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 2 )
+textures/normal = ExtResource( 3 )
 params/resize_mode = 0
 params/stretch_mode = 0
 
-[node name="Ingredient" type="Label" parent="Block1"]
+[node name="Ingredient" type="Label" parent="contentNode/Block1"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -77,7 +92,7 @@ margin/left = 275.0
 margin/top = 1.0
 margin/right = 868.0
 margin/bottom = 245.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.92549, 0.941176, 0.945098, 1 )
 text = "1 bunch of fresh basil"
 align = 1
@@ -87,7 +102,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="X" type="Label" parent="Block1"]
+[node name="X" type="Label" parent="contentNode/Block1"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -97,7 +112,7 @@ margin/left = 842.0
 margin/top = 0.0
 margin/right = 938.0
 margin/bottom = 101.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.388235, 0.431373, 0.439216, 1 )
 text = "X"
 align = 1
@@ -106,8 +121,9 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Block2" type="TextureFrame" parent="."]
+[node name="Block2" type="TextureFrame" parent="contentNode"]
 
+editor/display_folded = true
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -116,10 +132,10 @@ margin/left = 70.0
 margin/top = 370.0
 margin/right = 1008.0
 margin/bottom = 615.0
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
 stretch_mode = 0
 
-[node name="Block1-Image" type="TextureButton" parent="Block2"]
+[node name="Block1-Image" type="TextureButton" parent="contentNode/Block2"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -132,11 +148,11 @@ margin/bottom = 40.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 2 )
+textures/normal = ExtResource( 3 )
 params/resize_mode = 0
 params/stretch_mode = 0
 
-[node name="Ingredient" type="Label" parent="Block2"]
+[node name="Ingredient" type="Label" parent="contentNode/Block2"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -146,7 +162,7 @@ margin/left = 278.0
 margin/top = 1.0
 margin/right = 871.0
 margin/bottom = 245.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.92549, 0.941176, 0.945098, 1 )
 text = "1 medium onion"
 align = 1
@@ -156,7 +172,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="X" type="Label" parent="Block2"]
+[node name="X" type="Label" parent="contentNode/Block2"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -166,7 +182,7 @@ margin/left = 842.0
 margin/top = 0.0
 margin/right = 938.0
 margin/bottom = 101.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.388235, 0.431373, 0.439216, 1 )
 text = "X"
 align = 1
@@ -175,8 +191,9 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Block3" type="TextureFrame" parent="."]
+[node name="Block3" type="TextureFrame" parent="contentNode"]
 
+editor/display_folded = true
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -185,10 +202,10 @@ margin/left = 70.0
 margin/top = 650.0
 margin/right = 1008.0
 margin/bottom = 895.0
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
 stretch_mode = 0
 
-[node name="Block1-Image" type="TextureButton" parent="Block3"]
+[node name="Block1-Image" type="TextureButton" parent="contentNode/Block3"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -201,11 +218,11 @@ margin/bottom = 40.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 2 )
+textures/normal = ExtResource( 3 )
 params/resize_mode = 0
 params/stretch_mode = 0
 
-[node name="Ingredient" type="Label" parent="Block3"]
+[node name="Ingredient" type="Label" parent="contentNode/Block3"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -215,7 +232,7 @@ margin/left = 273.0
 margin/top = 1.0
 margin/right = 871.0
 margin/bottom = 245.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.92549, 0.941176, 0.945098, 1 )
 text = "2 cloves of garlic"
 align = 1
@@ -225,7 +242,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="X" type="Label" parent="Block3"]
+[node name="X" type="Label" parent="contentNode/Block3"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -235,7 +252,7 @@ margin/left = 842.0
 margin/top = 0.0
 margin/right = 938.0
 margin/bottom = 101.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.388235, 0.431373, 0.439216, 1 )
 text = "X"
 align = 1
@@ -244,8 +261,9 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Block4" type="TextureFrame" parent="."]
+[node name="Block4" type="TextureFrame" parent="contentNode"]
 
+editor/display_folded = true
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -254,10 +272,10 @@ margin/left = 70.0
 margin/top = 930.0
 margin/right = 1008.0
 margin/bottom = 1175.0
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
 stretch_mode = 0
 
-[node name="Block1-Image" type="TextureButton" parent="Block4"]
+[node name="Block1-Image" type="TextureButton" parent="contentNode/Block4"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -270,11 +288,11 @@ margin/bottom = 40.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 2 )
+textures/normal = ExtResource( 3 )
 params/resize_mode = 0
 params/stretch_mode = 0
 
-[node name="Ingredient" type="Label" parent="Block4"]
+[node name="Ingredient" type="Label" parent="contentNode/Block4"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -284,7 +302,7 @@ margin/left = 275.0
 margin/top = 1.0
 margin/right = 868.0
 margin/bottom = 245.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.92549, 0.941176, 0.945098, 1 )
 text = "480 g dried wholewheat spaghetti"
 align = 1
@@ -294,7 +312,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="X" type="Label" parent="Block4"]
+[node name="X" type="Label" parent="contentNode/Block4"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -304,7 +322,7 @@ margin/left = 842.0
 margin/top = 0.0
 margin/right = 938.0
 margin/bottom = 101.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.388235, 0.431373, 0.439216, 1 )
 text = "X"
 align = 1
@@ -313,8 +331,9 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Block5" type="TextureFrame" parent="."]
+[node name="Block5" type="TextureFrame" parent="contentNode"]
 
+editor/display_folded = true
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -323,10 +342,10 @@ margin/left = 70.0
 margin/top = 1210.0
 margin/right = 1008.0
 margin/bottom = 1455.0
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
 stretch_mode = 0
 
-[node name="Block1-Image" type="TextureButton" parent="Block5"]
+[node name="Block1-Image" type="TextureButton" parent="contentNode/Block5"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -339,11 +358,11 @@ margin/bottom = 40.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 4 )
+textures/normal = ExtResource( 5 )
 params/resize_mode = 0
 params/stretch_mode = 0
 
-[node name="Ingredient" type="Label" parent="Block5"]
+[node name="Ingredient" type="Label" parent="contentNode/Block5"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -353,7 +372,7 @@ margin/left = 275.0
 margin/top = 1.0
 margin/right = 868.0
 margin/bottom = 245.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.92549, 0.941176, 0.945098, 1 )
 text = "500g strong white bread flour"
 align = 1
@@ -363,7 +382,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="X" type="Label" parent="Block5"]
+[node name="X" type="Label" parent="contentNode/Block5"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -373,7 +392,7 @@ margin/left = 842.0
 margin/top = 0.0
 margin/right = 938.0
 margin/bottom = 101.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.388235, 0.431373, 0.439216, 1 )
 text = "X"
 align = 1
@@ -382,8 +401,9 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Block6" type="TextureFrame" parent="."]
+[node name="Block6" type="TextureFrame" parent="contentNode"]
 
+editor/display_folded = true
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -392,10 +412,10 @@ margin/left = 70.0
 margin/top = 1490.0
 margin/right = 1008.0
 margin/bottom = 1735.0
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
 stretch_mode = 0
 
-[node name="Block1-Image" type="TextureButton" parent="Block6"]
+[node name="Block1-Image" type="TextureButton" parent="contentNode/Block6"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -408,11 +428,11 @@ margin/bottom = 40.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 4 )
+textures/normal = ExtResource( 5 )
 params/resize_mode = 0
 params/stretch_mode = 0
 
-[node name="Ingredient" type="Label" parent="Block6"]
+[node name="Ingredient" type="Label" parent="contentNode/Block6"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -422,7 +442,7 @@ margin/left = 275.0
 margin/top = 1.0
 margin/right = 868.0
 margin/bottom = 245.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.92549, 0.941176, 0.945098, 1 )
 text = "10g salt"
 align = 1
@@ -432,7 +452,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="X" type="Label" parent="Block6"]
+[node name="X" type="Label" parent="contentNode/Block6"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -442,7 +462,7 @@ margin/left = 842.0
 margin/top = 0.0
 margin/right = 938.0
 margin/bottom = 101.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.388235, 0.431373, 0.439216, 1 )
 text = "X"
 align = 1
@@ -451,8 +471,9 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Block7" type="TextureFrame" parent="."]
+[node name="Block7" type="TextureFrame" parent="contentNode"]
 
+editor/display_folded = true
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -461,10 +482,10 @@ margin/left = 70.0
 margin/top = 1770.0
 margin/right = 1008.0
 margin/bottom = 2015.0
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
 stretch_mode = 0
 
-[node name="Block1-Image" type="TextureButton" parent="Block7"]
+[node name="Block1-Image" type="TextureButton" parent="contentNode/Block7"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -477,11 +498,11 @@ margin/bottom = 40.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 4 )
+textures/normal = ExtResource( 5 )
 params/resize_mode = 0
 params/stretch_mode = 0
 
-[node name="Ingredient" type="Label" parent="Block7"]
+[node name="Ingredient" type="Label" parent="contentNode/Block7"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -491,7 +512,7 @@ margin/left = 275.0
 margin/top = 1.0
 margin/right = 868.0
 margin/bottom = 245.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.92549, 0.941176, 0.945098, 1 )
 text = "10g instant yeast"
 align = 1
@@ -501,7 +522,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="X" type="Label" parent="Block7"]
+[node name="X" type="Label" parent="contentNode/Block7"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -511,7 +532,7 @@ margin/left = 842.0
 margin/top = 0.0
 margin/right = 938.0
 margin/bottom = 101.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.388235, 0.431373, 0.439216, 1 )
 text = "X"
 align = 1
@@ -520,8 +541,9 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Block8" type="TextureFrame" parent="."]
+[node name="Block8" type="TextureFrame" parent="contentNode"]
 
+editor/display_folded = true
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -530,10 +552,10 @@ margin/left = 70.0
 margin/top = 2050.0
 margin/right = 1008.0
 margin/bottom = 2295.0
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
 stretch_mode = 0
 
-[node name="Block1-Image" type="TextureButton" parent="Block8"]
+[node name="Block1-Image" type="TextureButton" parent="contentNode/Block8"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -546,11 +568,11 @@ margin/bottom = 40.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-textures/normal = ExtResource( 4 )
+textures/normal = ExtResource( 5 )
 params/resize_mode = 0
 params/stretch_mode = 0
 
-[node name="Ingredient" type="Label" parent="Block8"]
+[node name="Ingredient" type="Label" parent="contentNode/Block8"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -560,7 +582,7 @@ margin/left = 275.0
 margin/top = 1.0
 margin/right = 868.0
 margin/bottom = 245.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.92549, 0.941176, 0.945098, 1 )
 text = "Olive oil for kneading"
 align = 1
@@ -570,7 +592,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="X" type="Label" parent="Block8"]
+[node name="X" type="Label" parent="contentNode/Block8"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -580,7 +602,7 @@ margin/left = 842.0
 margin/top = 0.0
 margin/right = 938.0
 margin/bottom = 101.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.388235, 0.431373, 0.439216, 1 )
 text = "X"
 align = 1
