@@ -88,7 +88,7 @@ textures/normal = ExtResource( 2 )
 params/resize_mode = 1
 params/stretch_mode = 0
 script/script = ExtResource( 3 )
-screenIndexToShow = 2
+screenIndexToShow = 5
 
 [node name="Text" type="Control" parent="Buttons/RecipeForTodayButton"]
 
@@ -278,7 +278,7 @@ params/resize_mode = 1
 params/stretch_mode = 0
 params/modulate = Color( 0.223529, 0.494118, 0.682353, 1 )
 script/script = ExtResource( 3 )
-screenIndexToShow = 2
+screenIndexToShow = 5
 
 [node name="Icon" type="TextureFrame" parent="Buttons/Box1"]
 
@@ -345,7 +345,7 @@ params/resize_mode = 1
 params/stretch_mode = 0
 params/modulate = Color( 0.341176, 0.756863, 0.282353, 1 )
 script/script = ExtResource( 3 )
-screenIndexToShow = 3
+screenIndexToShow = 6
 
 [node name="Icon" type="TextureFrame" parent="Buttons/Box2"]
 
