@@ -10,7 +10,8 @@ var menuOnMaxPos = false
 
 signal canMoveMenu
 
-func _ready(): handle_signals()
+func _ready(): 
+	handle_signals()
 func _on_moveScreen(actPosX): actualScreen.set_pos(Vector2(actPosX, actualScreen.get_pos().y))
 func _on_change_actual_screen(index):
 	nextScreen = screens[index]

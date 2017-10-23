@@ -52,6 +52,14 @@ margin/bottom = 1920.0
 
 [node name="HomeScreen" parent="UI/Screens" instance=ExtResource( 3 )]
 
+[node name="Box1" parent="UI/Screens/HomeScreen/Buttons"]
+
+editor/display_folded = true
+
+[node name="Box2" parent="UI/Screens/HomeScreen/Buttons"]
+
+editor/display_folded = true
+
 [node name="Profile" parent="UI/Screens" instance=ExtResource( 4 )]
 
 margin/left = -1080.0
@@ -87,28 +95,38 @@ minContentPos = 0
 
 [node name="HamburgerMenu" parent="UI" instance=ExtResource( 10 )]
 
-editor/display_folded = false
+editor/display_folded = true
 margin/top = 170.0
 margin/right = -50.0
 margin/bottom = 1920.0
 
+[node name="TextureButton" parent="UI/HamburgerMenu/menu/VBoxContainer"]
+
+editor/display_folded = true
+
 [node name="TextureButton1" parent="UI/HamburgerMenu/menu/VBoxContainer"]
 
+editor/display_folded = true
 screenIndexToShow = 1
 
 [node name="TextureButton2" parent="UI/HamburgerMenu/menu/VBoxContainer"]
 
+editor/display_folded = true
 screenIndexToShow = 2
 
 [node name="TextureButton3" parent="UI/HamburgerMenu/menu/VBoxContainer"]
 
+editor/display_folded = true
 screenIndexToShow = 3
 
 [node name="TextureButton4" parent="UI/HamburgerMenu/menu/VBoxContainer"]
 
+editor/display_folded = true
 screenIndexToShow = 4
 
 [node name="topBar" parent="UI" instance=ExtResource( 11 )]
+
+editor/display_folded = true
 
 [node name="TextureFrame" parent="UI/topBar"]
 
@@ -137,5 +155,6 @@ playback/repeat = false
 playback/speed = 1.0
 
 
+[editable path="UI/Screens/HomeScreen"]
 [editable path="UI/HamburgerMenu"]
 [editable path="UI/topBar"]

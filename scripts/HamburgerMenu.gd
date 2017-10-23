@@ -46,8 +46,8 @@ func _input(ev):
 						emit_signal("maxPos", true)
 						stateChanged = true
 					else:
-						stateChanged = false
 						emit_signal("maxPos", false)
+						stateChanged = false
 
 func changeMenuState():
 	if not stateChanged:
