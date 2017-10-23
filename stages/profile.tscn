@@ -121,7 +121,7 @@ margin/right = 737.0
 margin/bottom = 353.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.92549, 0.941176, 0.945098, 1 )
-text = "Zmniejsz cukier poprzez ograniczenie derpibooru"
+text = "Cut down on the sweet things by not visting derpibooru"
 align = 1
 valign = 1
 autowrap = true
@@ -157,7 +157,6 @@ stretch_mode = 4
 
 [node name="Task-3" type="TextureFrame" parent="Profile-Tasks/contentNode/Weekly Tasks"]
 
-editor/display_folded = true
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -181,7 +180,7 @@ margin/right = 737.0
 margin/bottom = 353.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.92549, 0.941176, 0.945098, 1 )
-text = "Ogranicz fastfood"
+text = "Cut down on the fastfood"
 align = 1
 valign = 1
 autowrap = true
@@ -241,7 +240,7 @@ margin/right = 737.0
 margin/bottom = 353.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.92549, 0.941176, 0.945098, 1 )
-text = "Nie jedz słodyczy przez jeden dzień"
+text = "Don't eat sweets for one day"
 align = 1
 valign = 1
 autowrap = true
@@ -308,7 +307,6 @@ color = Color( 0.501961, 0.541176, 0.54902, 1 )
 
 [node name="Daily Task" type="Control" parent="Profile-Tasks/contentNode"]
 
-editor/display_folded = true
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -320,7 +318,6 @@ margin/bottom = 565.0
 
 [node name="Task-1" type="TextureFrame" parent="Profile-Tasks/contentNode/Daily Task"]
 
-editor/display_folded = true
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -344,7 +341,7 @@ margin/right = 737.0
 margin/bottom = 353.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.92549, 0.941176, 0.945098, 1 )
-text = "Przygotuj spaghetti ala bolognese"
+text = "Prepare spaghetti alla bolognese"
 align = 1
 valign = 1
 autowrap = true

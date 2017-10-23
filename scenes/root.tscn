@@ -90,7 +90,6 @@ margin/right = 0.0
 editor/display_folded = true
 margin/left = -1080.0
 margin/right = 0.0
-minContentPos = 0
 
 [node name="HamburgerMenu" parent="UI" instance=ExtResource( 10 )]
 
