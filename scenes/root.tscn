@@ -84,7 +84,6 @@ margin/right = 0.0
 
 margin/left = -1080.0
 margin/right = 0.0
-minContentPos = 0
 
 [node name="Baguette-Recipe" parent="UI/Screens" instance=ExtResource( 9 )]
 
