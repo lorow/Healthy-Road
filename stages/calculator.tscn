@@ -1,13 +1,45 @@
-[gd_scene load_steps=3 format=1]
+[gd_scene load_steps=11 format=1]
 
-[ext_resource path="res://fonts/SourceSansPro-SemiBold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://sprites/bmi/female.tex" type="Texture" id=1]
+[ext_resource path="res://fonts/SourceSansPro-SemiBold.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://sprites/profile/todo-circle.tex" type="Texture" id=3]
+[ext_resource path="res://sprites/profile/frame-todo.tex" type="Texture" id=4]
+[ext_resource path="res://sprites/bmi/man.tex" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=4]
+
+font/size = 50
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+
+font/size = 150
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=7]
+
+font/size = 60
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=6]
+
+font/size = 160
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=3]
 
 font/size = 150
 font/use_mipmaps = false
 font/use_filter = false
-font/font = ExtResource( 1 )
+font/font = ExtResource( 2 )
 
 [node name="calculator" type="Control"]
 
@@ -19,6 +51,443 @@ margin/left = 0.0
 margin/top = 170.0
 margin/right = 1080.0
 margin/bottom = 1920.0
+
+[node name="Female" type="Control" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 40.0
+margin/right = 540.0
+margin/bottom = 1750.0
+
+[node name="FemaleTexture" type="TextureFrame" parent="Female"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 250.0
+margin/right = 512.0
+margin/bottom = 762.0
+texture = ExtResource( 1 )
+modulate = Color( 0.501961, 0.545098, 0.552941, 1 )
+stretch_mode = 0
+
+[node name="Slider1" type="ColorFrame" parent="Female"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 42.0
+margin/top = 890.0
+margin/right = 474.0
+margin/bottom = 905.0
+color = Color( 0.741176, 0.764706, 0.776471, 1 )
+
+[node name="Weight" type="Label" parent="Female/Slider1"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = -88.0
+margin/right = 150.0
+margin/bottom = -24.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
+text = "Weight"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Kilograms" type="Label" parent="Female/Slider1"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 450.0
+margin/top = -28.0
+margin/right = 506.0
+margin/bottom = 36.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
+text = "Kg"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="TextureButton" type="TextureButton" parent="Female/Slider1"]
+
+rect/scale = Vector2( 0.4, 0.4 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 190.0
+margin/top = -30.0
+margin/right = 384.0
+margin/bottom = 164.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 3 )
+params/resize_mode = 0
+params/stretch_mode = 0
+params/modulate = Color( 0.501961, 0.545098, 0.552941, 1 )
+
+[node name="<number of kg>" type="Label" parent="Female/Slider1/TextureButton"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 20.0
+margin/top = 197.0
+margin/right = 184.0
+margin/bottom = 399.0
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
+text = "40"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Slider2" type="ColorFrame" parent="Female"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 42.0
+margin/top = 1095.0
+margin/right = 474.0
+margin/bottom = 1110.0
+color = Color( 0.741176, 0.764706, 0.776471, 1 )
+
+[node name="Height" type="Label" parent="Female/Slider2"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = -88.0
+margin/right = 150.0
+margin/bottom = -24.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
+text = "Height"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Cm" type="Label" parent="Female/Slider2"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 450.0
+margin/top = -28.0
+margin/right = 506.0
+margin/bottom = 36.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
+text = "Cm"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="TextureButton" type="TextureButton" parent="Female/Slider2"]
+
+rect/scale = Vector2( 0.4, 0.4 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 190.0
+margin/top = -30.0
+margin/right = 384.0
+margin/bottom = 164.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 3 )
+params/resize_mode = 0
+params/stretch_mode = 0
+params/modulate = Color( 0.501961, 0.545098, 0.552941, 1 )
+
+[node name="<number of kg>" type="Label" parent="Female/Slider2/TextureButton"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -17.0
+margin/top = 197.0
+margin/right = 214.0
+margin/bottom = 399.0
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
+text = "140"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Accept" type="TextureButton" parent="Female"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 43.0
+margin/top = 1373.0
+margin/right = 474.0
+margin/bottom = 1509.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 4 )
+params/resize_mode = 1
+params/stretch_mode = 1
+
+[node name="calculate" type="Label" parent="Female/Accept"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 432.0
+margin/bottom = 136.0
+custom_fonts/font = SubResource( 7 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Calculate"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Man" type="Control" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 540.0
+margin/top = 40.0
+margin/right = 1080.0
+margin/bottom = 1750.0
+
+[node name="Accept1" type="TextureButton" parent="Man"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 43.0
+margin/top = 1373.0
+margin/right = 474.0
+margin/bottom = 1509.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 4 )
+params/resize_mode = 1
+params/stretch_mode = 1
+
+[node name="calculate" type="Label" parent="Man/Accept1"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 432.0
+margin/bottom = 136.0
+custom_fonts/font = SubResource( 7 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Calculate"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Slider3" type="ColorFrame" parent="Man"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 42.0
+margin/top = 890.0
+margin/right = 474.0
+margin/bottom = 905.0
+color = Color( 0.741176, 0.764706, 0.776471, 1 )
+
+[node name="Weight" type="Label" parent="Man/Slider3"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = -88.0
+margin/right = 150.0
+margin/bottom = -24.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
+text = "Weight"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="TextureButton" type="TextureButton" parent="Man/Slider3"]
+
+rect/scale = Vector2( 0.4, 0.4 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 190.0
+margin/top = -30.0
+margin/right = 384.0
+margin/bottom = 164.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 3 )
+params/resize_mode = 0
+params/stretch_mode = 0
+params/modulate = Color( 0.501961, 0.545098, 0.552941, 1 )
+
+[node name="<number of kg>" type="Label" parent="Man/Slider3/TextureButton"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 20.0
+margin/top = 197.0
+margin/right = 184.0
+margin/bottom = 399.0
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
+text = "40"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Slider4" type="ColorFrame" parent="Man"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 42.0
+margin/top = 1095.0
+margin/right = 474.0
+margin/bottom = 1110.0
+color = Color( 0.741176, 0.764706, 0.776471, 1 )
+
+[node name="Height" type="Label" parent="Man/Slider4"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = -88.0
+margin/right = 150.0
+margin/bottom = -24.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
+text = "Height"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="TextureButton" type="TextureButton" parent="Man/Slider4"]
+
+rect/scale = Vector2( 0.4, 0.4 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 190.0
+margin/top = -30.0
+margin/right = 384.0
+margin/bottom = 164.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 3 )
+params/resize_mode = 0
+params/stretch_mode = 0
+params/modulate = Color( 0.501961, 0.545098, 0.552941, 1 )
+
+[node name="<number of kg>" type="Label" parent="Man/Slider4/TextureButton"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -17.0
+margin/top = 197.0
+margin/right = 214.0
+margin/bottom = 399.0
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
+text = "140"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="ManTexture" type="TextureFrame" parent="Man"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 20.0
+margin/top = 250.0
+margin/right = 532.0
+margin/bottom = 762.0
+texture = ExtResource( 5 )
+modulate = Color( 0.501961, 0.545098, 0.552941, 1 )
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 1080.0
+margin/bottom = 202.0
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 0.501961, 0.545098, 0.552941, 1 )
+text = "Your BMI"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
 
 [node name="PROTOTYPE" type="Label" parent="."]
 
